@@ -1,0 +1,10 @@
+#!/bin/bash
+export PATH=~/bin:$PATH
+export LS_COLORS='ow=01;36;40'
+export VISUAL=vim
+export EDITOR=vim
+
+alias vi=vim
+alias emacs="emacs -nw"
+alias mypasswords="vim ~/home/Documents/git-local/mypasswords.vi"
+alias ls="ls --color"
