@@ -1,6 +1,6 @@
 
 outer=4.6;
-inner=3.75;
+inner=3.8;
 brim=6;
 
 difference(){
