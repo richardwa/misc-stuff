@@ -1,4 +1,14 @@
 set nocompatible              " be iMproved, required
+filetype off
+
+"vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'sirtaj/vim-openscad'
+Plugin 'scrooloose/nerdtree'
+call vundle#end() 
+
 filetype plugin indent on    " required
 syntax on
 
