@@ -1,26 +1,103 @@
 <!doctype html>
 <html>
-<head>
-<title>FlashAir</title>
-<meta charset="UTF-8">
-<meta name="copyright" content="(c) 2013, Fixstars Corporation. All rights reserved.">
-<meta name="author" content="Junichi Kitano">
-<script type="text/javascript" src="/SD_WLAN/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/SD_WLAN/js/main.js"></script>
-</head>
-<body>
-<div id="header">
-<h1>header</h1>
-</div>
-<hr>
-<div id="list">
-</div>
-<hr>
-    upload<br>
-    <input type="file" id='file' name='file'><br>
-    <button id="cmdUpload">Upload</button>
-<div id="footer">
-footer
-</div>
-</body>
+  <head>
+    <title>FlashAir</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+const host = document.location.hostname;
+let folder = document.location.pathname;
+
+//remove List.htm from end, only happens when testing
+if (folder.indexOf('List.htm') >= 0){
+  folder = folder.substr(0,folder.length - 8);
+}
+
+//load data
+const wlansd = new Array();
+const headers = ['r_uri','fname','fsize','attr','fdate','ftime'];
+if (host === 'localhost'){
+  //test data
+  wlansd.push({"r_uri":"", "fname":"horse.gcode", "fsize":7033079,"attr":32,"fdate":0,"ftime":0});
+  wlansd.push({"r_uri":"", "fname":"octet-stream", "fsize":0,"attr":32,"fdate":0,"ftime":0});
+  wlansd.push({"r_uri":"", "fname":"keycap.gcode", "fsize":1098645,"attr":32,"fdate":0,"ftime":0});
+  wlansd.push({"r_uri":"", "fname":"test", "fsize":0,"attr":16,"fdate":19333,"ftime":3905});
+  wlansd.push({"r_uri":"", "fname":"3DBenchy_-_LEGO_compatible_-_Bottom_connection.gcode", "fsize":8527006,"attr":32,"fdate":19334,"ftime":37845});
+
+}else{
+  <!--WLANSDJLST-->
+}
+
+
+document.writeln(`<h1>${folder}</h1>`);
+
+//column headers
+document.writeln('<table border=1>');
+document.writeln('<tr>' + headers.map(s => `<th>${s}</th>`).join('') + '</tr>');
+
+//data
+wlansd.forEach(d => {
+  document.writeln('<tr>');
+  document.writeln(`<td>${d.r_uri}</td>`);
+  document.writeln(`<td><a href='${d.r_uri}/${d.fname}'>${d.fname}</a></td>`);
+  document.writeln(`<td>${d.fsize}</td>`);
+  document.writeln(`<td>${parseInt(d.attr).toString(2)}</td>`);
+  document.writeln(`<td>${d.fdate}</td>`);
+  document.writeln(`<td>${d.ftime}</td>`);
+  document.writeln('</tr>');
+});
+
+document.writeln('</table>');
+
+
+function upload(form){
+  form.action = `upload.cgi?UPDIR=${escape(folder)}`;
+  return true;
+}
+
+//Date to FAT32 standard
+
+function toFAT32Date(dt){
+  var year = (dt.getFullYear() - 1980) << 9;
+  var month = (dt.getMonth() + 1) << 5;
+  var date = dt.getDate();
+  var hours = dt.getHours() << 11;
+  var minites = dt.getMinutes() << 5;
+  var seconds = Math.floor(dt.getSeconds() / 2);
+  var timestring = "0x" + (year + month + date).toString(16) + (hours + minites + seconds).toString(16);  
+  return timestring;
+}
+
+//UploadProcess
+const cgi = '/upload.cgi';
+function doUpload(form) {
+  try{
+    fetch(`${cgi}?WRITEPROTECT=ON&UPDIR=${folder}&FTIME=${toFAT32Date(new Date())}`)
+      .then(() =>{
+        const uploadFile = form.file.files[0];
+        const fd = new FormData();
+        fd.append("file", uploadFile);
+        fetch(cgi,{
+          method: 'post',
+          headers: {
+            "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+          },
+          body: fd
+        }).then(() => alert('success'))
+        .catch(() => alert('error'));
+      });
+  }catch(e){
+    console.log(e);
+  }
+}
+    </script>
+
+    <hr/>
+    <h2>Upload</h2>
+    <form onsubmit='doUpload(this); return false'>
+      <input name=file type=file size=50><br>
+      <input type=submit value=submit >
+    </form>
+  </body>
 </html>

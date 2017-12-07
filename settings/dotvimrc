@@ -16,9 +16,9 @@ let mapleader=","
 set ruler
 set modelines=0
 set nocompatible
-set sw=4
+set sw=2
 set number
-set tabstop=4
+set tabstop=2
 set expandtab
 set pastetoggle=<F2>
 set backspace=indent,eol,start
@@ -43,6 +43,9 @@ set incsearch
 set showmatch
 set hlsearch
 
+"indent format file
+map <leader>l mzgg=G`z
+
 "easier navigation for moving split panes
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -56,3 +59,12 @@ set splitright
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 :color desert
+" NerdTree
+nmap <leader>ne :NERDTree<cr>
+
+"auto reload vimrc
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
+
