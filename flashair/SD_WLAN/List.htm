@@ -3,8 +3,9 @@
   <head>
     <title>FlashAir</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
   </head>
-  <body>
+  <body style="height:100vh">
     <script>
 const host = document.location.hostname;
 let folder = document.location.pathname;
@@ -71,33 +72,28 @@ function toFAT32Date(dt){
 
 //UploadProcess
 const cgi = '/upload.cgi';
-function doUpload(form) {
-  try{
-    fetch(`${cgi}?WRITEPROTECT=ON&UPDIR=${folder}&FTIME=${toFAT32Date(new Date())}`)
-      .then(() =>{
-        const uploadFile = form.file.files[0];
-        const fd = new FormData();
-        fd.append("file", uploadFile);
-        fetch(cgi,{
-          method: 'post',
-          headers: {
-            "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-          },
-          body: fd
-        }).then(() => alert('success'))
-        .catch(() => alert('error'));
+function doUpload(file) {
+  document.body.style.cursor = 'wait';
+  fetch(`${cgi}?WRITEPROTECT=ON&UPDIR=${folder}&FTIME=${toFAT32Date(new Date())}`)
+    .then(() =>{
+      const fd = new FormData();
+      fd.append("file", file.files[0]);
+      return fetch(cgi,{
+        method: 'post',
+        body: fd
       });
-  }catch(e){
-    console.log(e);
-  }
+    })
+    .catch(() => alert('error'))
+    .then(() => fetch(`${cgi}?WRITEPROTECT=OFF`))
+    .then(() => {
+      document.body.style.cursor = 'auto';
+      document.location.reload();
+    });
 }
     </script>
 
     <hr/>
     <h2>Upload</h2>
-    <form onsubmit='doUpload(this); return false'>
-      <input name=file type=file size=50><br>
-      <input type=submit value=submit >
-    </form>
+    <input name=file type=file onchange='doUpload(this)' size=50><br>
   </body>
 </html>
