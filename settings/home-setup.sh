@@ -5,7 +5,11 @@ ln -sf "$DIR/dotprofile" ~/.profile
 ln -sf "$DIR/dotbash_profile" ~/.bash_profile
 ln -sf "$DIR/dotbash_profile" ~/.bashrc
 
-ln -sf "$DIR/dotvimrc" ~/.vimrc
+#vim stuff
 mkdir -p ~/.vim/bundle
+mkdir -p ~/.config
+ln -sf ~/.vim ~/.config/nvim
+ln -sf "$DIR/dotvimrc" ~/.vimrc
+ln -sf "$DIR/dotvimrc" ~/.config/nvim/init.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
