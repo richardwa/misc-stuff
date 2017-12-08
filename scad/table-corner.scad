@@ -1,4 +1,4 @@
-include <Rounded_Cube/cubeX.scad>
+include <lib/cubeX/cubeX.scad>
 table_thickness = 25;
 thickness=3;
 offset=8;
