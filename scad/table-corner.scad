@@ -1,20 +1,25 @@
-include <lib/cubeX/cubeX.scad>
-table_thickness = 25;
-thickness=3;
-offset=8;
+$fn=50;
 
-total=table_thickness+2*thickness;
+table = 25; //table thickness
+thickness=3; //thickness of the part
+offset=12; 
+
+total=table+2*thickness;
+infinity = 1000;
 
 difference(){
-    cubeX(total,radius=thickness);
+    minkowski(){
+        cube(table, center=true);
+        sphere(thickness);
+    }
     
-    translate([thickness,thickness,thickness])
-    cube([table_thickness,total,total]);
-
-//    translate([0,total,total])
-//    rotate([0,90,0])
-//    cylinder(total,r=table_thickness, center=true);
+    translate([-table/2,-table/2,-table/2])
+    cube([table,infinity,infinity]);
     
-    translate([-total,thickness+offset,thickness+offset])
-    cubeX([3*total,total,total],radius=2*thickness);
+    translate([-total/2,-total/2+offset,-total/2+offset])
+    minkowski(){
+        cube(total);
+        sphere(thickness);
+    }
 }
+
