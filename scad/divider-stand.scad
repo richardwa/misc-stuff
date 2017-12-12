@@ -6,8 +6,7 @@ h = 25;
 l = 25;
 
 t= 4;
-
-fl = 160;
+fl = 160; //feet length
 
 infinity = 1000;
 
