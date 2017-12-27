@@ -18,7 +18,7 @@ difference(){
     }
 
     translate([0,0,-1]) intersection() {
-        hex_grid([2*r, 2*r, inf], hole, t/2);
+        hex_grid([2*r, 2*r, inf], hole, 1.5);
         cylinder(inf,r-t,r-t);
     }
        
