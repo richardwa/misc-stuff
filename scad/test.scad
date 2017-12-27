@@ -1,8 +1,5 @@
+use <util.scad>
 
 $fn=50;
 
-#minkowski(){
-cube(10);
-sphere(2);
-
-}
+hex_grid([100,100,10], 8, 2);
