@@ -1,4 +1,4 @@
-include <lib/util.scad>
+use <util.scad>;
 
 $fn = 100;
 r = 15;
@@ -15,8 +15,4 @@ difference(){
   }
   cylinder(h+1,2,2);
   translate([0,0,h-5]) cylinder(3,5,5);
-
-
 }
-
-
