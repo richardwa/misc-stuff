@@ -24,7 +24,7 @@ module hex_grid(box, d, t) {
 }
 
 module trapazoid_prism(bottom_width, bottom_length, top_width, top_length,
-                       height, center = true) {
+                       height, center = false) {
   CubeFaces = [
     [ 0, 1, 2, 3 ], // bottom
     [ 4, 5, 1, 0 ], // front
