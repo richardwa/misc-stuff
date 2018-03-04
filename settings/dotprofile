@@ -1,10 +1,13 @@
 #!/bin/bash
-export PATH=~/bin:$PATH
+export PS1='\[\033[01;32m\]\u@\h \[\033[01;33m\]\W\[\033[00m\]\$ '
+export PATH=~/bin:~/.cabal/bin:$PATH
 export LS_COLORS='ow=01;36;40'
 export VISUAL=vim
 export EDITOR=vim
-
 alias vi=nvim
 alias emacs="emacs -nw"
-alias mypasswords="vim ~/home/Documents/git-local/mypasswords.vi"
 alias ls="ls --color"
+
+git_local=~/home/Documents/git-local/
+alias mypasswords="vim $git_local/mypasswords.vi"
+alias mycommit="p=`pwd` ; cd $git_local ; git add . ; git commit -m'update'; cd $p "
