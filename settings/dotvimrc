@@ -62,6 +62,9 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " NerdTree
 nmap <leader>ne :NERDTree<cr>
 
+" Run current file
+nnoremap <leader>go :w<bar>!%:p<cr><cr>
+
 "auto reload vimrc
 augroup myvimrc
     au!
