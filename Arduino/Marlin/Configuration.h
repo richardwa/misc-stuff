@@ -802,9 +802,9 @@
 *   leveling in steps so you can manually adjust the Z height at each grid-point.
 *   With an LCD controller the process is guided step-by-step.
 */
-//#define AUTO_BED_LEVELING_3POINT
+#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-#define AUTO_BED_LEVELING_BILINEAR
+//#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
@@ -829,10 +829,10 @@
 #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
 // Set the boundaries for probing (where the probe can reach).
-#define LEFT_PROBE_BED_POSITION 40
-#define RIGHT_PROBE_BED_POSITION 170
-#define FRONT_PROBE_BED_POSITION 20
-#define BACK_PROBE_BED_POSITION 150
+#define LEFT_PROBE_BED_POSITION 0
+#define RIGHT_PROBE_BED_POSITION 180
+#define FRONT_PROBE_BED_POSITION 60
+#define BACK_PROBE_BED_POSITION 200
 
 // The Z probe minimum outer margin (to validate G29 parameters).
 #define MIN_PROBE_EDGE 10
@@ -862,12 +862,12 @@
 
 // 3 arbitrary points to probe.
 // A simple cross-product is used to estimate the plane of the bed.
-#define ABL_PROBE_PT_1_X 15
-#define ABL_PROBE_PT_1_Y 180
-#define ABL_PROBE_PT_2_X 15
-#define ABL_PROBE_PT_2_Y 20
-#define ABL_PROBE_PT_3_X 170
-#define ABL_PROBE_PT_3_Y 20
+#define ABL_PROBE_PT_1_X 40
+#define ABL_PROBE_PT_1_Y 60
+#define ABL_PROBE_PT_2_X 40
+#define ABL_PROBE_PT_2_Y 150
+#define ABL_PROBE_PT_3_X 160
+#define ABL_PROBE_PT_3_Y 60
 
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
