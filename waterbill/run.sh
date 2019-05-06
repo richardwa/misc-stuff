@@ -5,14 +5,14 @@ curl -v -c out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/security_main.asp?Ac
 curl -v -b out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/trans_history.asp" > out/html.tmp
 
 cat out/html.tmp \
-| tr -d "\n\r" `# make into single line`\
+| tr -d "\n\r" `# make into single line, somehow grep's -Pzo does not work for this`\
 | tr -s " "    `# merge multiple spaces`\
 | grep -Po "<tr.*?>.*?</tr>"  `# get the tr's`\
 | tail -n +3 `# remove top lines`\
 | tr -d "<tdr/>class=od\"$" `# remove unwanted chars` \
 | tr -s " " `# merge multiple spaces (again)`\
-| awk '{ print substr($1,5,4)"/"substr($1,1,2)"/"substr($1,3,2), $2, $3 + $4 }' `# date, consumption, cost`\
+| awk '{ print substr($1,5,4)"/"substr($1,1,2)"/"substr($1,3,2), $2, $3 + $4}' `# parse date, consumption, sum costs`\
 | sort -n `# sort number` \
 > out/formatted.txt
 
-echo "date consumption cost" | cat - out/formatted.txt
+echo "billdate consumption charges" | cat - out/formatted.txt
