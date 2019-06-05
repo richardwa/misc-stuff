@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>My Gallery</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <style>
+            html {
+                font-family: verdana;
+            }
+            .border {
+                border: 1px solid gray;
+                padding: 5px;
+                margin: 5px;
+                display: inline-block;
+                border-radius: 5px;
+            }
+            .border:hover{
+                background-color: #CCCCCC;
+                text-decoration: none;
+            }
+            .img div{
+                height:9em;
+                width:9em;
+                background-repeat: no-repeat;
+                background-position: center; 
+            }
+            a {
+                text-decoration: none;
+                color: blue;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body ng-view></body>
+    <script type="text/ng-template" id="view">
+<div>
+<span ng-repeat="link in trail">
+    <span ng-if="!$last">
+        <a href="#{{link.href}}">{{link.name}}</a> >
+    </span>
+    <span ng-if="$last" style="font-weight: bold">
+        {{link.name}}
+    </span>
+</span>
+</div>
+
+<div ng-if="data.dir.length > 0">
+    <hr/>
+    <a ng-repeat="item in data.dir" class="border" href="#{{hash}}{{item.href}}">
+        <img src="/icons/folder.gif" >
+        {{item.name}}
+    </a>
+</div>
+
+<div ng-if="data.images.length > 0">
+    <hr/>
+    <a ng-repeat="item in data.images" class="border {{item.type}}" 
+        href="{{base}}{{hash}}{{item.href}}" target="_blank">
+        <div ng-style="{'background-image': 'url(/cgi-bin/thumb.cgi?{{context}}{{hash}}{{item.href}})'}"></div>
+    </a>
+</div>
+
+<div ng-if="data.others.length > 0">
+    <hr/>
+    <a ng-repeat="item in data.others" class="border {{item.type}}" 
+        href="{{base}}{{hash}}{{item.href}}" >
+        {{item.name}}
+    </a>
+</div>
+    </script>
+</html>
+<script src="/NOINDEX/lib/angular.min.js"></script>
+<script src="/NOINDEX/lib/angular-route.min.js"></script>
+<script>
+'use strict';
+var transform = function (icon, link, lastModified, size, description) {
+        var href = link.match(/href="(.+?)"/)[1].trim(); 
+        return {
+            href: href,
+            name: unescape(href),
+            type: (icon.match(/alt="\[(.+?)\]"/)[1] || "unknown").toLocaleLowerCase()
+        };
+    };
+angular.module('app', ['ngRoute'])
+.value("config", function () { 
+    var loc = location.href,
+        indexHash = loc.indexOf("#"),
+        settings;
+    if (indexHash === -1) {
+        settings =  {
+            base: loc.substr(0,loc.lastIndexOf("/")),
+            hash: "/"
+        };
+    } else {
+        settings = {
+            base: loc.substr(0,loc.lastIndexOf("/", indexHash)),
+            hash: loc.substr(indexHash+1) || "/"
+        };
+    }
+    settings.context = settings.base.substr(location.origin.length);
+    return settings;
+})
+.config(function($routeProvider, $locationProvider) {
+    $routeProvider.otherwise({
+        templateUrl: "view",
+        controller: "gallery"
+    });
+})
+.controller('gallery', function($scope, $http, config) {
+    var settings = config();
+    $scope.base = settings.base;
+    $scope.hash = settings.hash;
+    $scope.context = settings.context;
+    $scope.trail = (settings.hash.match(/[^\/]*\//g) || [])
+        .map(function (o, i, arr) {
+            return {
+                name: (i === 0 ? "pictures" : unescape(o.slice(0, -1))),
+                href: arr.slice(0,i+1).join("")
+            };
+        });
+    $http.get(settings.base+settings.hash).then(function (o) {
+        var i, start, item, colsize = 5,
+            list = o.data.match(/<td(.+?)<\/td>/g),
+            data = {
+                dir:[],
+                images:[],
+                others:[]
+            };
+        for (i=0;i<list.length/colsize;i++) {
+            start = i*colsize; 
+            item = transform.apply(null,list.slice(start, start + colsize));
+
+            if (item.type === "img"){
+                data.images.push(item);
+            } else if (item.type === "parentdir") {
+                //skip parentdir
+            } else if (item.type === "dir"){
+                data.dir.push(item);
+            } else {
+                data.others.push(item);
+            }
+        }
+        $scope.data = data;
+    });
+});
+</script>
