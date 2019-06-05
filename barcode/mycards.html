@@ -28,19 +28,19 @@
 <script>
     const html = [];
     html.push('<table border=1>')
-    data.forEach((card,i) => {
+    data.forEach(card => {
         html.push('<tr>');
         html.push(`<td>${card.name}</td>`);
-        html.push(`<td><svg id="_${i}"></svg></td>`);
+        html.push(`<td>
+            <svg class="barcode"
+             jsbarcode-format="${card.type}"
+             jsbarcode-value="${card.value}"
+             jsbarcode-height="60">
+            </svg>
+            </td>`);
         html.push('</tr>');
     });
     html.push('</table>')
     document.body.innerHTML = html.join('');
-
-    // generate the codes
-    data.forEach((card,i)=>{
-        JsBarcode(`#_${i}`, card.value, {
-            format: card.type
-        });
-    });
+    JsBarcode(".barcode").init();
 </script>
