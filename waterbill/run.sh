@@ -1,5 +1,5 @@
 #!/bin/bash
-. ~/home/Documents/git-local/bwsc-login.profile
+. ~/home/Documents/github/personal/bwsc-login.profile
 
 #curl -v -c out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/security_main.asp?AcctNum=${BWSC_ACCT}&MtrNum=${BWSC_CODE}"
 #curl -v -b out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/trans_history.asp" > out/html.tmp
