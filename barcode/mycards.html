@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Loyalty Cards</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <script src="./JsBarcode.all.min.js"></script>
@@ -11,13 +10,19 @@
     <style>
         * {
             font-family: monospace;
-            font-size: 20pt;
+            font-size: 18pt;
         }
 
         td {
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             width: 300px;
+        }
+
+        @media print {
+            body {
+                transform: scale(.5);
+            }
         }
     </style>
 </head>
@@ -35,7 +40,10 @@
             <svg class="barcode"
              jsbarcode-format="${card.type}"
              jsbarcode-value="${card.value}"
-             jsbarcode-height="60">
+             jsbarcode-height="60"
+             jsbarcode-margin="0"
+             jsbarcode-fontSize="15"
+             >
             </svg>
             </td>`);
         html.push('</tr>');
