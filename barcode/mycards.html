@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loyalty Cards</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <script src="./JsBarcode.all.min.js"></script>
+    <script src="../../personal/mycards.js"></script>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 20pt;
+        }
+
+        td {
+            text-align: center;
+            padding: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body></body>
+
+</html>
+<script>
+    const html = [];
+    html.push('<table border=1>')
+    data.forEach((card,i) => {
+        html.push('<tr>');
+        html.push(`<td>${card.name}</td>`);
+        html.push(`<td><svg id="_${i}"></svg></td>`);
+        html.push('</tr>');
+    });
+    html.push('</table>')
+    document.body.innerHTML = html.join('');
+
+    // generate the codes
+    data.forEach((card,i)=>{
+        JsBarcode(`#_${i}`, card.value, {
+            format: card.type
+        });
+    });
+</script>
