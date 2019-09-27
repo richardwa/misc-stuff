@@ -1,8 +1,8 @@
 #!/bin/bash
 . ~/home/Documents/github/personal/bwsc-login.profile
 
-#curl -v -c out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/security_main.asp?AcctNum=${BWSC_ACCT}&MtrNum=${BWSC_CODE}"
-#curl -v -b out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/trans_history.asp" > out/html.tmp
+curl -v -c out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/security_main.asp?AcctNum=${BWSC_ACCT}&MtrNum=${BWSC_CODE}"
+curl -v -b out/cookiejar.tmp "https://old.bwsc.org/ACCOUNTS/trans_history.asp" > out/html.tmp
 
 cat out/html.tmp \
 | tr -d "\n\r" `# make into single line`\
