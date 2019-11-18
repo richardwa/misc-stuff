@@ -1,27 +1,17 @@
 /*
-  Blink
+  arduino setup.
+  - set preferences to use github repo misc-stuff/Arduino as our projects library
 
-  Turns an LED on for one second, then off for one second, repeatedly.
+  hardware setup.
+  - ensure blue pill has 10k resistor connected on A12 and 3.3v -- this fixes a hardware bug that renders the usb not recognizable by a computer.
+  - flash boot loader (misc-stuff/updater_stm32f1) onto board via serial.  after this we can leave jumpers on normal mode
 
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
-  the correct LED pin independent of which board is used.
-  If you want to know what pin the on-board LED is connected to on your Arduino
-  model, check the Technical Specs of your board at:
-  https://www.arduino.cc/en/Main/Products
-
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
-
-  This example code is in the public domain.
-
-  http://www.arduino.cc/en/Tutorial/Blink
+  board: Generic STM32F103C series
+  
+  to upload an external hex file use 
+    misc-stuff\Arduino\hardware\Arduino_STM32\tools\win\stm32loader.py
+  
 */
-
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
@@ -31,7 +21,7 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(PC13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(100);                       // wait for a second
-  digitalWrite(PC13, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);                       // wait for a second
+  digitalWrite(PC13, LOW);    // turn the LED off by making the voltage LOW
+  delay(100);                       // wait for a second
 }
