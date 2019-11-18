@@ -46,16 +46,25 @@ wlansd.forEach(d => {
   document.writeln(`<td>${parseInt(d.attr).toString(2)}</td>`);
   document.writeln(`<td>${d.fdate}</td>`);
   document.writeln(`<td>${d.ftime}</td>`);
+  document.writeln(`<td><a href='javascript:deleteFile("${d.r_uri}/${d.fname}")'>delete</a></td>`);
   document.writeln('</tr>');
 });
 
 document.writeln('</table>');
 
 
+
 function upload(form){
   form.action = `upload.cgi?UPDIR=${escape(folder)}`;
   return true;
 }
+
+function deleteFile(file){
+  fetch(`upload.cgi?DEL=${file}`)
+  .then(() => location.reload());
+  return false;
+}
+
 
 //Date to FAT32 standard
 

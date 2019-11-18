@@ -1,0 +1,126 @@
+@import url(/web/20190810023910cs_/https://flashair-developers.com/css/animate.css);@-webkit-keyframes fadeInDownSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}@keyframes fadeInDownSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}.fadeInDownSmall{-webkit-animation-name:fadeInDownSmall;animation-name:fadeInDownSmall}@-webkit-keyframes fadeInLeftSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}@keyframes fadeInLeftSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    -ms-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}.fadeInLeftSmall{-webkit-animation-name:fadeInLeftSmall;animation-name:fadeInLeftSmall}@-webkit-keyframes fadeInRightSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}@keyframes fadeInRightSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    -ms-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}.fadeInRightSmall{-webkit-animation-name:fadeInRightSmall;animation-name:fadeInRightSmall}@-webkit-keyframes fadeInUpSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}@keyframes fadeInUpSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    -ms-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}.fadeInUpSmall{-webkit-animation-name:fadeInUpSmall;animation-name:fadeInUpSmall}
+/*
+     FILE ARCHIVED ON 02:39:10 Aug 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:22:05 Nov 18, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.013
+  exclusion.robots: 0.166
+  RedisCDXSource: 1.574
+  exclusion.robots.policy: 0.146
+  captures_list: 337.319
+  PetaboxLoader3.datanode: 319.466 (4)
+  load_resource: 128.354
+  PetaboxLoader3.resolve: 70.458
+  CDXLines.iter: 22.45 (3)
+  LoadShardBlock: 299.988 (3)
+*/
