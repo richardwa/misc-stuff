@@ -4,6 +4,7 @@ echo $DIR
 ln -sf "$DIR/dotprofile" ~/.profile
 ln -sf "$DIR/dotbash_profile" ~/.bash_profile
 ln -sf "$DIR/dotbash_profile" ~/.bashrc
+ln -sf "$DIR/dottmux.conf" ~/.tmux.conf
 
 #vim stuff
 mkdir -p ~/.vim/bundle

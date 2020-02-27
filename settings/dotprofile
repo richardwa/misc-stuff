@@ -8,6 +8,8 @@ alias vi=nvim
 alias emacs="emacs -nw"
 alias ls="ls --color"
 
-git_local=~/home/Documents/git-local/
-alias mypasswords="vim $git_local/mypasswords.vi"
-alias mycommit="p=`pwd` ; cd $git_local ; git add . ; git commit -m'update'; cd $p "
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+
+
+alias mypasswords="vim ~/.git-local/mypasswords.vi"
+alias mycommit="p=`pwd` ; cd ~/.git-local ; git add . ; git commit -m'update'; cd $p "
