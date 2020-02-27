@@ -9,11 +9,15 @@ alias ls="ls --color"
 
 [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
 
-pass() { 
+source ~/.password-store/.setup/startup.sh
+
+settings() { 
   if [[ $@ == "commit" ]]; then 
-    command echo hi; 
+    command ~/.settings/commit.sh
   else 
-    command pass "$@"; 
+    command cd ~/.settings; 
   fi; 
 }
+
+
 
