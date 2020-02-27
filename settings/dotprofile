@@ -10,6 +10,3 @@ alias ls="ls --color"
 
 [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
 
-
-alias mypasswords="vim ~/.git-local/mypasswords.vi"
-alias mycommit="p=`pwd` ; cd ~/.git-local ; git add . ; git commit -m'update'; cd $p "
