@@ -6,8 +6,16 @@ export VISUAL=nvim
 export EDITOR=nvim
 alias vi=nvim
 alias ls="ls --color"
+alias tdo="tmux detach-client -a"
 
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+if [[ "$HOSTNAME" == "MERCURY" ]]; then
+  cd ~
+  alias git="/mnt/c/Program\ Files/Git/bin/git.exe"
+fi
+
+cd ~
+
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session; }
 
 source ~/.password-store/.setup/startup.sh
 
