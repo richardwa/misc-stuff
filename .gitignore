@@ -1,4 +1,5 @@
 ArduinoData
 *.swp
 *.stl
+*.pw
 out
