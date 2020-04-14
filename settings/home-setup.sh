@@ -5,8 +5,8 @@ echo $DIR
 # settings
 ln -sf "$DIR" ~/.settings
 ln -sf "$DIR/dotprofile" ~/.profile
-ln -sf "$DIR/dotbash_profile" ~/.bash_profile
-ln -sf "$DIR/dotbash_profile" ~/.bashrc
+ln -sf "$DIR/dotprofile" ~/.bash_profile
+ln -sf "$DIR/dotprofile" ~/.bashrc
 ln -sf "$DIR/dottmux.conf" ~/.tmux.conf
 
 # home
