@@ -7,7 +7,7 @@ ln -sf "$DIR" ~/.settings
 ln -sf "$DIR/dotprofile" ~/.profile
 ln -sf "$DIR/dotprofile" ~/.bash_profile
 ln -sf "$DIR/dotprofile" ~/.bashrc
-ln -sf "$DIR/dottmux.conf" ~/.tmux.conf
+# ln -sf "$DIR/dottmux.conf" ~/.tmux.conf
 
 # home
 ln -sf "/mnt/h/Documents" ~/Documents

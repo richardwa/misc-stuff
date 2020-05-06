@@ -43,5 +43,5 @@ covid_cases %>%
   group_by(country) %>% 
   filter(geoId %in% c('US','CN','KR','JP','IT','TW','CZ','UK','TH')) %>% 
   mutate(total = cumsum(cases), mavg=ma(cases,10)) %>% 
-  ggplot(aes(x=date, y=mavg,col=country))+
-  geom_line()+ scale_y_log10()
+  ggplot(aes(x=date, y=total,col=country))+
+  geom_smooth()+ scale_y_log10()
