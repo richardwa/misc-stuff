@@ -16,6 +16,8 @@ EOF
 > sudo chmod 755 /etc/grub.d/01_enable_vga.conf
 > sudo update-grub
 
+the display now with some weird artifacts then NVIDIA splash screen (twice, every time X is loaded)
+
 
 # install nvidia drivers
 lan cable required
