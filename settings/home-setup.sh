@@ -3,7 +3,6 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 echo $DIR
 
 # settings
-ln -sf "$DIR" ~/.settings
 ln -sf "$DIR/dotprofile" ~/.profile
 ln -sf "$DIR/dotprofile" ~/.bash_profile
 ln -sf "$DIR/dotprofile" ~/.bashrc
