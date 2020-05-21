@@ -1,6 +1,0 @@
-subversion
-vim
-neovim
-unzip
-zip
-
