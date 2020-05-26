@@ -20,7 +20,7 @@ private:
   byte columns[6] = {0, 7, 3, 2, 7, 0};
 
   // 24 hour clock
-  byte limits[6] = {2, 4, 6, 10, 6, 10};
+  byte limits[3] = {24, 60, 60};
 
   void drawDigit(byte i);
 

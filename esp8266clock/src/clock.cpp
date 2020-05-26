@@ -60,19 +60,28 @@ void Clock::setTime(const String str) //hhmmss
 
 void Clock::addSecond()
 {
-  for (int i = 5; i >= 0; i--)
+  for (byte i = 2; i >= 0; i--)
   {
-    byte next = values[i] + 1;
+    byte j = i * 2;
+    byte next = values[j] * 10 + values[j + 1] + 1;
+
     if (next >= limits[i])
     {
-      values[i] = 0;
-      drawDigit(i);
+      values[j] = 0;
+      values[j + 1] = 0;
+      drawDigit(j);
+      drawDigit(j + 1);
+      continue;
     }
-    else
+
+    if (values[j] != next / 10)
     {
-      values[i] = next;
-      drawDigit(i);
-      break;
+      values[j] = next / 10;
+      drawDigit(j);
     }
+
+    values[j + 1] = next % 10;
+    drawDigit(j + 1);
+    break;
   }
 }
