@@ -15,11 +15,28 @@ Clock::Clock()
   }
 }
 
-void Clock::drawDigit(byte panel, byte col, const byte *bitmap, byte size)
+void Clock::drawDigit(byte i)
 {
+  byte val = values[i];
+  byte pan = panels[i];
+  byte col = columns[i];
+  byte size;
+  const byte *bitmap;
+
+  if (i < 4)
+  {
+    size = 6;
+    bitmap = &font_digit_6x8[val * size];
+  }
+  else
+  {
+    size = 1;
+    bitmap = &font_abacus_1x8[val * size];
+  }
+
   for (byte i = 0; i < size; i++)
   {
-    byte _panel = panel + (col + i) / 8;
+    byte _panel = pan + (col + i) / 8;
     byte _col = (col + i) % 8;
     DB_SHOW(_panel);
     DB_SHOW(_col);
@@ -30,25 +47,32 @@ void Clock::drawDigit(byte panel, byte col, const byte *bitmap, byte size)
 
 void Clock::setTime(const String str) //hhmmss
 {
-  for (byte i = 0; i < str.length(); i++)
+  for (byte i = 0; i < 6; i++)
   {
     byte val = str[i] - '0';
-    if (val != value[i])
+    if (val != values[i])
     {
-      value[i] = val;
-      DB_SHOW(val);
-      if (i < 4)
-      {
-        drawDigit(pan[i], col[i], &font_digit_6x8[val * 6], 6);
-      }
-      else
-      {
-        drawDigit(pan[i], col[i], &font_abacus_1x8[val], 1);
-      }
+      values[i] = val;
+      drawDigit(i);
     }
   }
 }
 
 void Clock::addSecond()
 {
+  for (int i = 5; i >= 0; i--)
+  {
+    byte next = values[i] + 1;
+    if (next >= limits[i])
+    {
+      values[i] = 0;
+      drawDigit(i);
+    }
+    else
+    {
+      values[i] = next;
+      drawDigit(i);
+      break;
+    }
+  }
 }

@@ -14,7 +14,7 @@ void setup()
   }
   cl = Clock();
   Serial.println("clock initialized");
-  cl.setTime("124852");
+  cl.setTime("033600");
 }
 
 void loop()
