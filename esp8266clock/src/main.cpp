@@ -8,10 +8,15 @@ unsigned const long interval = 1000; // need 1 second timer
 
 void setup()
 {
-  Serial.begin(115200);
-  while (!Serial.available()){
-    //Do Absolutely Nothing until something is received over the serial port
+  if (DEBUG)
+  {
+    Serial.begin(115200);
+    while (!Serial.available())
+    {
+      //Do Absolutely Nothing until something is received over the serial port
+    }
   }
+
   cl = Clock();
   Serial.println("clock initialized");
   cl.setTime("033600");
