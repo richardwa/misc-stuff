@@ -4,11 +4,12 @@
 #include <sys/time.h>
 #include <TZ.h>
 
-class NTP
+class Clock
 {
 private:
-  time_t now;  
+  time_t now;
+
 public:
-  NTP();
+  Clock();
   String getTime();
 };

@@ -1,11 +1,11 @@
-#include "ntp.h"
+#include "clock.h"
 
-NTP::NTP()
+Clock::Clock()
 {
   configTime(TZ_America_New_York, "pool.ntp.org");
 };
 
-String NTP::getTime()
+String Clock::getTime()
 {
   time(&now);
   tm *local = localtime(&now);

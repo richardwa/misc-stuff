@@ -2,10 +2,10 @@
 #include "debug.h"
 #include <ESP8266WiFi.h>
 #include "wifi-pw.h"
-#include "ntp.h"
+#include "clock.h"
 
 Display cl;
-NTP ntp;
+Clock ntp;
 unsigned long previousMillis;
 unsigned long count;
 unsigned const long interval = 5000; // need 1 second timer
@@ -26,7 +26,7 @@ void setup()
   cl = Display();
   PRINT("Display initialized");
 
-  ntp = NTP();
+  ntp = Clock();
   String time = ntp.getTime();
   PRINT(time);
 
