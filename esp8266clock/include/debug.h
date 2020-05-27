@@ -3,10 +3,16 @@
 
 #define DEBUG 1
 
-#define DB_SHOW(expression)                               \
+#define SHOW(expression)                                  \
   if (DEBUG)                                              \
   {                                                       \
     Serial.printf("# %s: %d\n", #expression, expression); \
+  }
+
+#define PRINT(str)       \
+  if (DEBUG)             \
+  {                      \
+    Serial.println(str); \
   }
 
 #endif

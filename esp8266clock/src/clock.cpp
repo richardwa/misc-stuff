@@ -38,9 +38,9 @@ void Clock::drawDigit(byte i)
   {
     byte _panel = pan + (col + i) / 8;
     byte _col = (col + i) % 8;
-    DB_SHOW(_panel);
-    DB_SHOW(_col);
-    DB_SHOW(bitmap[i]);
+    SHOW(_panel);
+    SHOW(_col);
+    SHOW(bitmap[i]);
     lc.setColumn(_panel, 7 - _col, bitmap[i]);
   }
 }

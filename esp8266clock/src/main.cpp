@@ -1,10 +1,14 @@
 #include "clock.h"
 #include "debug.h"
+#include <ESP8266WiFi.h>
+#include "wifi-pw.h"
+#include "ntp.h"
 
 Clock cl;
+NTP ntp;
 unsigned long previousMillis;
 unsigned long count;
-unsigned const long interval = 1000; // need 1 second timer
+unsigned const long interval = 5000; // need 1 second timer
 
 void setup()
 {
@@ -17,9 +21,16 @@ void setup()
     }
   }
 
+  WiFi.begin(NETWORK, PASSWORD);
+
+  ntp = NTP();
   cl = Clock();
-  Serial.println("clock initialized");
-  cl.setTime("043500");
+
+  String time = ntp.getTime();
+  PRINT(time);
+  PRINT("clock initialized");
+
+  cl.setTime("123456");
 }
 
 void loop()
@@ -29,7 +40,8 @@ void loop()
   {
     previousMillis = currentMillis;
     cl.addSecond();
-    DB_SHOW(count);
+    PRINT(ntp.getTime());
+    SHOW(count);
     count++;
   }
 }
