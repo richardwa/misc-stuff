@@ -1,4 +1,5 @@
-import parse from 'parse-apache-directory-index'
+import * as parse from 'parse-apache-directory-index';
+import fetch from 'cross-fetch';
 
 type Listing = {
   dir: string,
@@ -16,7 +17,7 @@ type Listing = {
 export const getListing = (url: string): Promise<Listing> =>
   fetch(url)
     .then(r => r.text())
-    .then(parse);
+    .then(t => parse(t));
 
 
     //   const doc = parser.parseFromString(text, "text/html");
