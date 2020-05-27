@@ -8,7 +8,7 @@
 
 const static byte NUM_PANELS = 4;
 
-class Clock
+class Display
 {
 private:
   LedControl lc = LedControl(DATA_PIN, CLK_PIN, CS_PIN, NUM_PANELS);
@@ -25,7 +25,7 @@ private:
   void drawDigit(byte i);
 
 public:
-  Clock();
+  Display();
   void setTime(const String str); //hhmmss format
   void addSecond();
 };

@@ -1,10 +1,10 @@
-#include "clock.h"
+#include "display.h"
 #include "debug.h"
 #include <ESP8266WiFi.h>
 #include "wifi-pw.h"
 #include "ntp.h"
 
-Clock cl;
+Display cl;
 NTP ntp;
 unsigned long previousMillis;
 unsigned long count;
@@ -23,12 +23,12 @@ void setup()
 
   WiFi.begin(NETWORK, PASSWORD);
 
-  ntp = NTP();
-  cl = Clock();
+  cl = Display();
+  PRINT("Display initialized");
 
+  ntp = NTP();
   String time = ntp.getTime();
   PRINT(time);
-  PRINT("clock initialized");
 
   cl.setTime("123456");
 }

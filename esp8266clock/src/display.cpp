@@ -1,9 +1,9 @@
 #include <Arduino.h>
-#include "clock.h"
+#include "display.h"
 #include "fonts.h"
 #include "debug.h"
 
-Clock::Clock()
+Display::Display()
 {
   for (int i = 0; i < NUM_PANELS; i++)
   {
@@ -15,7 +15,7 @@ Clock::Clock()
   }
 }
 
-void Clock::drawDigit(byte i)
+void Display::drawDigit(byte i)
 {
   byte val = values[i];
   byte pan = panels[i];
@@ -45,7 +45,7 @@ void Clock::drawDigit(byte i)
   }
 }
 
-void Clock::setTime(const String str) //hhmmss
+void Display::setTime(const String str) //hhmmss
 {
   for (byte i = 0; i < 6; i++)
   {
@@ -58,7 +58,7 @@ void Clock::setTime(const String str) //hhmmss
   }
 }
 
-void Clock::addSecond()
+void Display::addSecond()
 {
   for (byte i = 2; i >= 0; i--)
   {
