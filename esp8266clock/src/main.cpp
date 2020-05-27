@@ -26,10 +26,11 @@ void setup()
 
 void loop()
 {
-  clk.update(); 
+  clk.update();
   for (byte i = 0; i < 6; i++)
   {
     display.drawDigit(i, clk.getDigit(i));
   }
-  
+
+  delay(200);
 }
