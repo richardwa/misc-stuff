@@ -1,40 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Doorbell Camera</title>
-  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-  <style>
-    .stream {
-      width: 100%;
-      max-width: 1920px;
-      margin: auto;
-      display: block;
-    }
+import { h, render, Component } from 'preact';
 
-    #captures {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      margin-top: 4px;
-      white-space: nowrap;
-    }
 
-    #captures>div {
-      margin: 4px;
-      display: inline-block;
-    }
 
-    #captures video {
-      width: 200px;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-    <img class="stream" src="/streams/1">
-    <div id="captures"></div>
-</body>
-</html>
-  <script>
+export class Main extends Component<{}, {}> {
+  render() {
+    return (
+      <div>
+      </div>
+    );
+  }
+}
+
+
+render(<Main />, document.body);
+/*
+<script>
     const parser = new DOMParser();
     function create(tag, ...children){
       const p = document.createElement(tag);
@@ -72,3 +52,6 @@
         }
     });
   </script>
+     <img class="stream" src="/streams/1">
+     <div id="captures"></div>
+     */

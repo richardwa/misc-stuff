@@ -2,11 +2,13 @@
   "compilerOptions": {
     "allowJs": true,
     "target": "es6",
-    "module": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "removeComments": false,
     "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "outDir": "./target",
     "jsx": "react",
     "jsxFactory": "h",
@@ -15,7 +17,7 @@
       "DOM"
     ],
   },
-  "files": [
-    "./src/index.tsx"
+  "include": [
+    "src/**/*.spec.ts"
   ]
 }
