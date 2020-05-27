@@ -12,20 +12,12 @@ class Display
 {
 private:
   LedControl lc = LedControl(DATA_PIN, CLK_PIN, CS_PIN, NUM_PANELS);
-
-  byte values[6]; //hhmmss
-
+  byte values[6];
   // panel mapping of each digit val
   byte panels[6] = {0, 0, 2, 3, 1, 2};
   byte columns[6] = {0, 7, 3, 2, 7, 0};
 
-  // 24 hour clock
-  byte limits[3] = {24, 60, 60};
-
-  void drawDigit(byte i);
-
 public:
   Display();
-  void setTime(const String str); //hhmmss format
-  void addSecond();
+  void drawDigit(byte i, byte value);
 };

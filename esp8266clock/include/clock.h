@@ -1,15 +1,17 @@
 
 #include <Arduino.h>
 #include <time.h>
-#include <sys/time.h>
-#include <TZ.h>
 
-class Clock
+class NTPClock
 {
 private:
   time_t now;
+  byte hour;
+  byte min;
+  byte sec;
 
 public:
-  Clock();
-  String getTime();
+  NTPClock();
+  byte getDigit(byte i);
+  void update();
 };

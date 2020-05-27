@@ -15,9 +15,12 @@ Display::Display()
   }
 }
 
-void Display::drawDigit(byte i)
+void Display::drawDigit(byte i, byte val)
 {
-  byte val = values[i];
+  if (val == values[i]){
+    return; // nothing to update
+  }
+  values[i] = val;
   byte pan = panels[i];
   byte col = columns[i];
   byte size;
@@ -42,46 +45,5 @@ void Display::drawDigit(byte i)
     SHOW(_col);
     SHOW(bitmap[i]);
     lc.setColumn(_panel, 7 - _col, bitmap[i]);
-  }
-}
-
-void Display::setTime(const String str) //hhmmss
-{
-  for (byte i = 0; i < 6; i++)
-  {
-    byte val = str[i] - '0';
-    if (val != values[i])
-    {
-      values[i] = val;
-      drawDigit(i);
-    }
-  }
-}
-
-void Display::addSecond()
-{
-  for (byte i = 2; i >= 0; i--)
-  {
-    byte j = i * 2;
-    byte next = values[j] * 10 + values[j + 1] + 1;
-
-    if (next >= limits[i])
-    {
-      values[j] = 0;
-      values[j + 1] = 0;
-      drawDigit(j);
-      drawDigit(j + 1);
-      continue;
-    }
-
-    if (values[j] != next / 10)
-    {
-      values[j] = next / 10;
-      drawDigit(j);
-    }
-
-    values[j + 1] = next % 10;
-    drawDigit(j + 1);
-    break;
   }
 }

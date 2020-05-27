@@ -4,11 +4,8 @@
 #include "wifi-pw.h"
 #include "clock.h"
 
-Display cl;
-Clock ntp;
-unsigned long previousMillis;
-unsigned long count;
-unsigned const long interval = 5000; // need 1 second timer
+Display display;
+NTPClock clk;
 
 void setup()
 {
@@ -17,31 +14,22 @@ void setup()
     Serial.begin(115200);
     while (!Serial.available())
     {
-      //Do Absolutely Nothing until something is received over the serial port
+      // wait for serial character
     }
   }
 
   WiFi.begin(NETWORK, PASSWORD);
 
-  cl = Display();
-  PRINT("Display initialized");
-
-  ntp = Clock();
-  String time = ntp.getTime();
-  PRINT(time);
-
-  cl.setTime("123456");
+  display = Display();
+  clk = NTPClock();
 }
 
 void loop()
 {
-  unsigned long currentMillis = millis();
-  if (currentMillis - previousMillis >= interval)
+  clk.update(); 
+  for (byte i = 0; i < 6; i++)
   {
-    previousMillis = currentMillis;
-    cl.addSecond();
-    PRINT(ntp.getTime());
-    SHOW(count);
-    count++;
+    display.drawDigit(i, clk.getDigit(i));
   }
+  
 }
