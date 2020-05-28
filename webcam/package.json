@@ -4,10 +4,10 @@
   "description": "Webcam Viewer",
   "scripts": {
     "prebuild": "rimraf docs",
-    "build": "parcel build app/index.html --public-url '.' --out-dir docs",
+    "build": "parcel build src/index.html --public-url '.' --out-dir site",
     "preserve": "rimraf target",
     "serve": "ts-node devserver/server.ts",
-    "test": "ts-node",
+    "test": "ts-node src/tests.spec.ts",
     "check": "tsc"
   },
   "devDependencies": {
@@ -21,9 +21,10 @@
     "typescript": "^3.9.2"
   },
   "dependencies": {
+    "cheerio": "^0.22.0",
     "cross-fetch": "^3.0.4",
     "jss": "^10.1.1",
-    "parse-apache-directory-index": "^1.2.1",
+    "jss-preset-default": "^10.1.1",
     "preact": "^10.4.1"
   }
 }

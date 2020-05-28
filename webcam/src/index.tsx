@@ -1,57 +1,111 @@
-import { h, render, Component } from 'preact';
+import { h, render, Component, FunctionalComponent } from 'preact';
+import { Item, getListing } from './util/util';
+import jss from 'jss';
+import preset from 'jss-preset-default';
+jss.setup(preset());
+
+const { classes } = jss.createStyleSheet({
+  preview: {
+    width: "200px",
+    height: "110px",
+    margin: 4
+  },
+  stream: {
+    width: "100%",
+    maxWidth: "1920px",
+    margin: "auto",
+    display: "block"
+  },
+  captures: {
+    overflowX: "scroll",
+    overflowY: "hidden",
+    marginTop: "4px",
+    whiteSpace: "nowrap",
+    "& > div": {
+      margin: "4px",
+      display: "inline-block"
+    },
+    "& video": {
+      width: "200px",
+      display: "block"
+    },
+    "& label": {
+      textAlign: "center",
+      display: "block"
+    }
+  }
+}).attach();
 
 
+type Camera = {
+  name: string,
+  feed: string,
+  captures: string
+}
 
-export class Main extends Component<{}, {}> {
+const cameras: Camera[] = [{
+  name: "doorbel",
+  feed: "/streams/1",
+  captures: "camera1/"
+}, {
+  name: "stairs",
+  feed: "/streams/2",
+  captures: "camera2/"
+}, {
+  name: "garage",
+  feed: "/streams/3",
+  captures: "camera3/"
+}];
+
+type State = {
+  currentCamera: number;
+  clips: Item[];
+}
+
+export class Main extends Component<{}, State> {
+  constructor() {
+    super();
+    this.state = {
+      currentCamera: 0,
+      clips: []
+    }
+    this.retrieveClips();
+  }
+
+  retrieveClips = () => {
+    const { currentCamera } = this.state;
+    const camera = cameras[currentCamera];
+    getListing(camera.captures).then(list => {
+      this.setState({ clips: list.files.slice(0, 10) });
+    })
+  }
+
+  onClick(i: number) {
+    this.setState({ currentCamera: i }, () => {
+      this.retrieveClips();
+    });
+  }
+
   render() {
-    return (
-      <div>
-      </div>
-    );
+    const { currentCamera, clips } = this.state;
+    const camera = cameras[currentCamera];
+    return [
+      <div>{
+        cameras.map((c, i) =>
+          <img class={classes.preview} onClick={() => this.onClick(i)} src={c.feed}></img>)
+      }</div>,
+      <img class={classes.stream} src={camera.feed}></img>,
+      <div class={classes.captures}>{
+        clips.map(f =>
+          <div>
+            <video src={f.path} preload="metadata" controls={true} />
+            <label>{f.name}</label>
+          </div>
+        )
+      }</div>
+    ];
   }
 }
 
 
 render(<Main />, document.body);
-/*
-<script>
-    const parser = new DOMParser();
-    function create(tag, ...children){
-      const p = document.createElement(tag);
-      if (children){
-        children.map(c => p.append(c));
-      }
-      return p;
-    }
-
-    // fetch modified date descending
-    fetch("camera1/?C=M;O=D")
-      .then(r => r.text())
-      .then(text => {
-        const doc = parser.parseFromString(text, "text/html");
-        const links = doc.querySelectorAll('tr td:nth-child(2) a');
-        const dates = doc.querySelectorAll('tr td:nth-child(3)');
-        const captures = document.getElementById('captures');
-        const size = Math.min(links.length, 50);
-
-        // skip first row -- parent directory
-        for (var i = 1; i < size;  i++){
-          const href = links[i].getAttribute("href");
-          const dateStr = dates[i].textContent.trim();
-
-          const video = create("video");
-          video.src = `camera1/${href}`;
-          video.preload = "metadata";
-          video.controls = true;
-
-          const label = create("center");
-          label.textContent = dateStr;
-
-          const div = create('div', video, label);
-          captures.append(div);
-        }
-    });
-  </script>
-     <img class="stream" src="/streams/1">
-     <div id="captures"></div>
-     */

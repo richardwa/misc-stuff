@@ -1,0 +1,1224 @@
+======== Resolving module 'preact' from '/home/developer/misc-stuff/webcam/src/index.tsx'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/src/preact.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/preact.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/preact.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/preact.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/preact.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/preact.d.ts' does not exist.
+File '/home/developer/misc-stuff/preact.ts' does not exist.
+File '/home/developer/misc-stuff/preact.tsx' does not exist.
+File '/home/developer/misc-stuff/preact.d.ts' does not exist.
+File '/home/developer/preact.ts' does not exist.
+File '/home/developer/preact.tsx' does not exist.
+File '/home/developer/preact.d.ts' does not exist.
+File '/home/preact.ts' does not exist.
+File '/home/preact.tsx' does not exist.
+File '/home/preact.d.ts' does not exist.
+File '/preact.ts' does not exist.
+File '/preact.tsx' does not exist.
+File '/preact.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/src/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/preact.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/src/preact.js' does not exist.
+File '/home/developer/misc-stuff/webcam/src/preact.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/preact.js' does not exist.
+File '/home/developer/misc-stuff/webcam/preact.jsx' does not exist.
+File '/home/developer/misc-stuff/preact.js' does not exist.
+File '/home/developer/misc-stuff/preact.jsx' does not exist.
+File '/home/developer/preact.js' does not exist.
+File '/home/developer/preact.jsx' does not exist.
+File '/home/preact.js' does not exist.
+File '/home/preact.jsx' does not exist.
+File '/preact.js' does not exist.
+File '/preact.jsx' does not exist.
+======== Module name 'preact' was not resolved. ========
+======== Resolving module './util/util' from '/home/developer/misc-stuff/webcam/src/index.tsx'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/src/util/util.ts' exist - use it as a name resolution result.
+======== Module name './util/util' was successfully resolved to '/home/developer/misc-stuff/webcam/src/util/util.ts'. ========
+======== Resolving module 'jss' from '/home/developer/misc-stuff/webcam/src/index.tsx'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/src/jss.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/jss.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/jss.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/jss.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/jss.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/jss.d.ts' does not exist.
+File '/home/developer/misc-stuff/jss.ts' does not exist.
+File '/home/developer/misc-stuff/jss.tsx' does not exist.
+File '/home/developer/misc-stuff/jss.d.ts' does not exist.
+File '/home/developer/jss.ts' does not exist.
+File '/home/developer/jss.tsx' does not exist.
+File '/home/developer/jss.d.ts' does not exist.
+File '/home/jss.ts' does not exist.
+File '/home/jss.tsx' does not exist.
+File '/home/jss.d.ts' does not exist.
+File '/jss.ts' does not exist.
+File '/jss.tsx' does not exist.
+File '/jss.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/src/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/jss.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/src/jss.js' does not exist.
+File '/home/developer/misc-stuff/webcam/src/jss.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/jss.js' does not exist.
+File '/home/developer/misc-stuff/webcam/jss.jsx' does not exist.
+File '/home/developer/misc-stuff/jss.js' does not exist.
+File '/home/developer/misc-stuff/jss.jsx' does not exist.
+File '/home/developer/jss.js' does not exist.
+File '/home/developer/jss.jsx' does not exist.
+File '/home/jss.js' does not exist.
+File '/home/jss.jsx' does not exist.
+File '/jss.js' does not exist.
+File '/jss.jsx' does not exist.
+======== Module name 'jss' was not resolved. ========
+======== Resolving module 'parse-apache-directory-index' from '/home/developer/misc-stuff/webcam/src/util/util.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/src/util/parse-apache-directory-index.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/util/parse-apache-directory-index.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/util/parse-apache-directory-index.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/parse-apache-directory-index.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/parse-apache-directory-index.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/parse-apache-directory-index.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/parse-apache-directory-index.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/parse-apache-directory-index.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/parse-apache-directory-index.d.ts' does not exist.
+File '/home/developer/misc-stuff/parse-apache-directory-index.ts' does not exist.
+File '/home/developer/misc-stuff/parse-apache-directory-index.tsx' does not exist.
+File '/home/developer/misc-stuff/parse-apache-directory-index.d.ts' does not exist.
+File '/home/developer/parse-apache-directory-index.ts' does not exist.
+File '/home/developer/parse-apache-directory-index.tsx' does not exist.
+File '/home/developer/parse-apache-directory-index.d.ts' does not exist.
+File '/home/parse-apache-directory-index.ts' does not exist.
+File '/home/parse-apache-directory-index.tsx' does not exist.
+File '/home/parse-apache-directory-index.d.ts' does not exist.
+File '/parse-apache-directory-index.ts' does not exist.
+File '/parse-apache-directory-index.tsx' does not exist.
+File '/parse-apache-directory-index.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/src/util/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/src/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parse-apache-directory-index.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/src/util/parse-apache-directory-index.js' does not exist.
+File '/home/developer/misc-stuff/webcam/src/util/parse-apache-directory-index.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/parse-apache-directory-index.js' does not exist.
+File '/home/developer/misc-stuff/webcam/src/parse-apache-directory-index.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/parse-apache-directory-index.js' does not exist.
+File '/home/developer/misc-stuff/webcam/parse-apache-directory-index.jsx' does not exist.
+File '/home/developer/misc-stuff/parse-apache-directory-index.js' does not exist.
+File '/home/developer/misc-stuff/parse-apache-directory-index.jsx' does not exist.
+File '/home/developer/parse-apache-directory-index.js' does not exist.
+File '/home/developer/parse-apache-directory-index.jsx' does not exist.
+File '/home/parse-apache-directory-index.js' does not exist.
+File '/home/parse-apache-directory-index.jsx' does not exist.
+File '/parse-apache-directory-index.js' does not exist.
+File '/parse-apache-directory-index.jsx' does not exist.
+======== Module name 'parse-apache-directory-index' was not resolved. ========
+======== Resolving module 'cross-fetch' from '/home/developer/misc-stuff/webcam/src/util/util.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/src/util/cross-fetch.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/util/cross-fetch.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/util/cross-fetch.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/cross-fetch.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/src/cross-fetch.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/cross-fetch.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/cross-fetch.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/cross-fetch.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/cross-fetch.d.ts' does not exist.
+File '/home/developer/misc-stuff/cross-fetch.ts' does not exist.
+File '/home/developer/misc-stuff/cross-fetch.tsx' does not exist.
+File '/home/developer/misc-stuff/cross-fetch.d.ts' does not exist.
+File '/home/developer/cross-fetch.ts' does not exist.
+File '/home/developer/cross-fetch.tsx' does not exist.
+File '/home/developer/cross-fetch.d.ts' does not exist.
+File '/home/cross-fetch.ts' does not exist.
+File '/home/cross-fetch.tsx' does not exist.
+File '/home/cross-fetch.d.ts' does not exist.
+File '/cross-fetch.ts' does not exist.
+File '/cross-fetch.tsx' does not exist.
+File '/cross-fetch.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/src/util/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/src/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/cross-fetch.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/src/util/cross-fetch.js' does not exist.
+File '/home/developer/misc-stuff/webcam/src/util/cross-fetch.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/src/cross-fetch.js' does not exist.
+File '/home/developer/misc-stuff/webcam/src/cross-fetch.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/cross-fetch.js' does not exist.
+File '/home/developer/misc-stuff/webcam/cross-fetch.jsx' does not exist.
+File '/home/developer/misc-stuff/cross-fetch.js' does not exist.
+File '/home/developer/misc-stuff/cross-fetch.jsx' does not exist.
+File '/home/developer/cross-fetch.js' does not exist.
+File '/home/developer/cross-fetch.jsx' does not exist.
+File '/home/cross-fetch.js' does not exist.
+File '/home/cross-fetch.jsx' does not exist.
+File '/cross-fetch.js' does not exist.
+File '/cross-fetch.jsx' does not exist.
+======== Module name 'cross-fetch' was not resolved. ========
+======== Resolving type reference directive 'body-parser', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts'.
+======== Type reference directive 'body-parser' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts' with Package ID '@types/body-parser/index.d.ts@1.19.0', primary: true. ========
+======== Resolving type reference directive 'connect', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/connect/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts'.
+======== Type reference directive 'connect' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts' with Package ID '@types/connect/index.d.ts@3.4.33', primary: true. ========
+======== Resolving type reference directive 'express', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/express/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts'.
+======== Type reference directive 'express' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts' with Package ID '@types/express/index.d.ts@4.17.6', primary: true. ========
+======== Resolving type reference directive 'express-serve-static-core', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+======== Type reference directive 'express-serve-static-core' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' with Package ID '@types/express-serve-static-core/index.d.ts@4.17.7', primary: true. ========
+======== Resolving type reference directive 'http-proxy', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'.
+======== Type reference directive 'http-proxy' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts' with Package ID '@types/http-proxy/index.d.ts@1.17.4', primary: true. ========
+======== Resolving type reference directive 'mime', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/mime/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts'.
+======== Type reference directive 'mime' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts' with Package ID '@types/mime/index.d.ts@2.0.2', primary: true. ========
+======== Resolving type reference directive 'node', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/node/index.d.ts'.
+'package.json' has a 'typesVersions' entry '>=3.7.0-0' that matches compiler version '3.9.3', looking for a pattern to match module name 'index.d.ts'.
+Module name 'index.d.ts', matched pattern '*'.
+Trying substitution 'ts3.7/*', candidate module location: 'ts3.7/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' with Package ID '@types/node/ts3.7/index.d.ts@14.0.5', primary: true. ========
+======== Resolving type reference directive 'parcel-bundler', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index' that references '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index' does not exist.
+Loading module as file / folder, candidate module location '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index', target file type 'TypeScript'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts'.
+======== Type reference directive 'parcel-bundler' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts' with Package ID '@types/parcel-bundler/index.d.ts@1.12.1', primary: true. ========
+======== Resolving type reference directive 'q', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/q/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/q/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/q/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/q/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/q/index.d.ts'.
+======== Type reference directive 'q' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/q/index.d.ts' with Package ID '@types/q/index.d.ts@1.5.4', primary: true. ========
+======== Resolving type reference directive 'qs', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/qs/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts'.
+======== Type reference directive 'qs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts' with Package ID '@types/qs/index.d.ts@6.9.3', primary: true. ========
+======== Resolving type reference directive 'range-parser', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index' that references '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index' does not exist.
+Loading module as file / folder, candidate module location '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index', target file type 'TypeScript'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.d.ts'.
+======== Type reference directive 'range-parser' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.d.ts' with Package ID '@types/range-parser/index.d.ts@1.2.3', primary: true. ========
+======== Resolving type reference directive 'serve-static', containing file '/home/developer/misc-stuff/webcam/__inferred type names__.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'.
+======== Type reference directive 'serve-static' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts' with Package ID '@types/serve-static/index.d.ts@1.13.4', primary: true. ========
+======== Resolving type reference directive 'node', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/node/index.d.ts'.
+'package.json' has a 'typesVersions' entry '>=3.7.0-0' that matches compiler version '3.9.3', looking for a pattern to match module name 'index.d.ts'.
+Module name 'index.d.ts', matched pattern '*'.
+Trying substitution 'ts3.7/*', candidate module location: 'ts3.7/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' with Package ID '@types/node/ts3.7/index.d.ts@14.0.5', primary: true. ========
+======== Resolving module 'fs' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts' exist - use it as a name resolution result.
+======== Module name 'fs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts' exist - use it as a name resolution result.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts' exist - use it as a name resolution result.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts' exist - use it as a name resolution result.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts' exist - use it as a name resolution result.
+======== Module name 'url' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+======== Resolving module 'fs/promises' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/promises.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/promises.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/promises.d.ts' exist - use it as a name resolution result.
+======== Module name 'fs/promises' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/promises.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'querystring' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/querystring.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/querystring.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/querystring.d.ts' exist - use it as a name resolution result.
+======== Module name 'querystring' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/querystring.d.ts'. ========
+======== Resolving module 'fs' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/promises.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/fs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/fs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs/fs.d.ts' does not exist.
+Resolution for module 'fs' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'fs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'dns' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/dns.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/dns.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/dns.d.ts' exist - use it as a name resolution result.
+======== Module name 'dns' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/dns.d.ts'. ========
+======== Resolving module 'child_process' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/cluster.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.d.ts' exist - use it as a name resolution result.
+======== Module name 'child_process' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/child_process.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/cluster.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/cluster.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'os' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/constants.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/os.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/os.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/os.d.ts' exist - use it as a name resolution result.
+======== Module name 'os' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/os.d.ts'. ========
+======== Resolving module 'crypto' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/constants.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/crypto.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/crypto.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/crypto.d.ts' exist - use it as a name resolution result.
+======== Module name 'crypto' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/crypto.d.ts'. ========
+======== Resolving module 'fs' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/constants.d.ts'. ========
+Resolution for module 'fs' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'fs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/crypto.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/dgram.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'dns' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/dgram.d.ts'. ========
+Resolution for module 'dns' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'dns' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/dns.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/dgram.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/domain.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'fs' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'fs' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'fs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/fs.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'tls' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts' exist - use it as a name resolution result.
+======== Module name 'tls' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts'. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/http2.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts' exist - use it as a name resolution result.
+======== Module name 'http' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts'. ========
+======== Resolving module 'crypto' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'crypto' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'crypto' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/crypto.d.ts'. ========
+======== Resolving module 'dns' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'dns' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'dns' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/dns.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'tls' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'tls' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'tls' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/tls.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'http' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'http' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/http.d.ts'. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/inspector.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/module.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+======== Resolving module 'async_hooks' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/perf_hooks.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/async_hooks.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/async_hooks.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/async_hooks.d.ts' exist - use it as a name resolution result.
+======== Module name 'async_hooks' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/async_hooks.d.ts'. ========
+======== Resolving module 'tty' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/process.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/tty.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/tty.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/tty.d.ts' exist - use it as a name resolution result.
+======== Module name 'tty' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/tty.d.ts'. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/tty.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'net' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/net.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/readline.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/readline.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'readline' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/repl.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/readline.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/readline.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/readline.d.ts' exist - use it as a name resolution result.
+======== Module name 'readline' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/readline.d.ts'. ========
+======== Resolving module 'vm' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/repl.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/vm.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/vm.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/vm.d.ts' exist - use it as a name resolution result.
+======== Module name 'vm' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/vm.d.ts'. ========
+======== Resolving module 'util' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/repl.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/util.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/util.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/util.d.ts' exist - use it as a name resolution result.
+======== Module name 'util' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/util.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/v8.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'vm' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'vm' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'vm' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/vm.d.ts'. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/events.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/url.d.ts'. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/node/zlib.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types/node'.
+======== Module name 'stream' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/stream.d.ts'. ========
+======== Resolving module 'connect' from '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/connect.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/connect.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/connect.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/connect.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/connect.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/connect.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/connect.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/connect.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/connect.d.ts' does not exist.
+File '/home/developer/misc-stuff/connect.ts' does not exist.
+File '/home/developer/misc-stuff/connect.tsx' does not exist.
+File '/home/developer/misc-stuff/connect.d.ts' does not exist.
+File '/home/developer/connect.ts' does not exist.
+File '/home/developer/connect.tsx' does not exist.
+File '/home/developer/connect.d.ts' does not exist.
+File '/home/connect.ts' does not exist.
+File '/home/connect.tsx' does not exist.
+File '/home/connect.d.ts' does not exist.
+File '/connect.ts' does not exist.
+File '/connect.tsx' does not exist.
+File '/connect.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/connect/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'connect' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts' with Package ID '@types/connect/index.d.ts@3.4.33'. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/http.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/http.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/http.d.ts' does not exist.
+File '/home/developer/misc-stuff/http.ts' does not exist.
+File '/home/developer/misc-stuff/http.tsx' does not exist.
+File '/home/developer/misc-stuff/http.d.ts' does not exist.
+File '/home/developer/http.ts' does not exist.
+File '/home/developer/http.tsx' does not exist.
+File '/home/developer/http.d.ts' does not exist.
+File '/home/http.ts' does not exist.
+File '/home/http.tsx' does not exist.
+File '/home/http.d.ts' does not exist.
+File '/http.ts' does not exist.
+File '/http.tsx' does not exist.
+File '/http.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/http.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/http.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/http.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/http.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/http.js' does not exist.
+File '/home/developer/misc-stuff/webcam/http.jsx' does not exist.
+File '/home/developer/misc-stuff/http.js' does not exist.
+File '/home/developer/misc-stuff/http.jsx' does not exist.
+File '/home/developer/http.js' does not exist.
+File '/home/developer/http.jsx' does not exist.
+File '/home/http.js' does not exist.
+File '/home/http.jsx' does not exist.
+File '/http.js' does not exist.
+File '/http.jsx' does not exist.
+======== Module name 'http' was not resolved. ========
+======== Resolving type reference directive 'node', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/node/index.d.ts'.
+'package.json' has a 'typesVersions' entry '>=3.7.0-0' that matches compiler version '3.9.3', looking for a pattern to match module name 'index.d.ts'.
+Module name 'index.d.ts', matched pattern '*'.
+Trying substitution 'ts3.7/*', candidate module location: 'ts3.7/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' with Package ID '@types/node/ts3.7/index.d.ts@14.0.5', primary: true. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/connect/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/connect/http.d.ts' does not exist.
+Resolution for module 'http' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'http' was not resolved. ========
+======== Resolving type reference directive 'express-serve-static-core', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+======== Type reference directive 'express-serve-static-core' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' with Package ID '@types/express-serve-static-core/index.d.ts@4.17.7', primary: true. ========
+======== Resolving type reference directive 'serve-static', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'.
+======== Type reference directive 'serve-static' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts' with Package ID '@types/serve-static/index.d.ts@1.13.4', primary: true. ========
+======== Resolving type reference directive 'node', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/node/index.d.ts'.
+'package.json' has a 'typesVersions' entry '>=3.7.0-0' that matches compiler version '3.9.3', looking for a pattern to match module name 'index.d.ts'.
+Module name 'index.d.ts', matched pattern '*'.
+Trying substitution 'ts3.7/*', candidate module location: 'ts3.7/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' with Package ID '@types/node/ts3.7/index.d.ts@14.0.5', primary: true. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/http.d.ts' does not exist.
+Resolution for module 'http' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'http' was not resolved. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/events.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/events.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/events.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/events.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/events.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/events.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/events.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/events.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/events.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/events.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/events.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/events.d.ts' does not exist.
+File '/home/developer/misc-stuff/events.ts' does not exist.
+File '/home/developer/misc-stuff/events.tsx' does not exist.
+File '/home/developer/misc-stuff/events.d.ts' does not exist.
+File '/home/developer/events.ts' does not exist.
+File '/home/developer/events.tsx' does not exist.
+File '/home/developer/events.d.ts' does not exist.
+File '/home/events.ts' does not exist.
+File '/home/events.tsx' does not exist.
+File '/home/events.d.ts' does not exist.
+File '/events.ts' does not exist.
+File '/events.tsx' does not exist.
+File '/events.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/events.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/events.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/events.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/events.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/events.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/events.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/events.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/events.js' does not exist.
+File '/home/developer/misc-stuff/webcam/events.jsx' does not exist.
+File '/home/developer/misc-stuff/events.js' does not exist.
+File '/home/developer/misc-stuff/events.jsx' does not exist.
+File '/home/developer/events.js' does not exist.
+File '/home/developer/events.jsx' does not exist.
+File '/home/events.js' does not exist.
+File '/home/events.jsx' does not exist.
+File '/events.js' does not exist.
+File '/events.jsx' does not exist.
+======== Module name 'events' was not resolved. ========
+======== Resolving module 'range-parser' from '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/range-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/range-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/range-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/range-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/range-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/range-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/range-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/range-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/range-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/range-parser.ts' does not exist.
+File '/home/developer/misc-stuff/range-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/range-parser.d.ts' does not exist.
+File '/home/developer/range-parser.ts' does not exist.
+File '/home/developer/range-parser.tsx' does not exist.
+File '/home/developer/range-parser.d.ts' does not exist.
+File '/home/range-parser.ts' does not exist.
+File '/home/range-parser.tsx' does not exist.
+File '/home/range-parser.d.ts' does not exist.
+File '/range-parser.ts' does not exist.
+File '/range-parser.tsx' does not exist.
+File '/range-parser.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index' that references '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index' does not exist.
+Loading module as file / folder, candidate module location '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index', target file type 'TypeScript'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'range-parser' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/range-parser/index.d.ts' with Package ID '@types/range-parser/index.d.ts@1.2.3'. ========
+======== Resolving module 'qs' from '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/qs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/qs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/qs.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/qs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/qs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/qs.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/qs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/qs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/qs.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/qs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/qs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/qs.d.ts' does not exist.
+File '/home/developer/misc-stuff/qs.ts' does not exist.
+File '/home/developer/misc-stuff/qs.tsx' does not exist.
+File '/home/developer/misc-stuff/qs.d.ts' does not exist.
+File '/home/developer/qs.ts' does not exist.
+File '/home/developer/qs.tsx' does not exist.
+File '/home/developer/qs.d.ts' does not exist.
+File '/home/qs.ts' does not exist.
+File '/home/qs.tsx' does not exist.
+File '/home/qs.d.ts' does not exist.
+File '/qs.ts' does not exist.
+File '/qs.tsx' does not exist.
+File '/qs.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/qs/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/qs.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'qs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts' with Package ID '@types/qs/index.d.ts@6.9.3'. ========
+======== Resolving type reference directive 'express-serve-static-core', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+======== Type reference directive 'express-serve-static-core' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' with Package ID '@types/express-serve-static-core/index.d.ts@4.17.7', primary: true. ========
+======== Resolving module 'express-serve-static-core' from '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/express-serve-static-core.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/express-serve-static-core.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/express-serve-static-core.d.ts' does not exist.
+File '/home/developer/misc-stuff/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/express-serve-static-core.d.ts' does not exist.
+File '/home/developer/express-serve-static-core.ts' does not exist.
+File '/home/developer/express-serve-static-core.tsx' does not exist.
+File '/home/developer/express-serve-static-core.d.ts' does not exist.
+File '/home/express-serve-static-core.ts' does not exist.
+File '/home/express-serve-static-core.tsx' does not exist.
+File '/home/express-serve-static-core.d.ts' does not exist.
+File '/express-serve-static-core.ts' does not exist.
+File '/express-serve-static-core.tsx' does not exist.
+File '/express-serve-static-core.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'express-serve-static-core' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' with Package ID '@types/express-serve-static-core/index.d.ts@4.17.7'. ========
+======== Resolving module 'mime' from '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/mime.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/mime.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/mime.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/mime.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/mime.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/mime.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/mime.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/mime.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/mime.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/mime.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/mime.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/mime.d.ts' does not exist.
+File '/home/developer/misc-stuff/mime.ts' does not exist.
+File '/home/developer/misc-stuff/mime.tsx' does not exist.
+File '/home/developer/misc-stuff/mime.d.ts' does not exist.
+File '/home/developer/mime.ts' does not exist.
+File '/home/developer/mime.tsx' does not exist.
+File '/home/developer/mime.d.ts' does not exist.
+File '/home/mime.ts' does not exist.
+File '/home/mime.tsx' does not exist.
+File '/home/mime.d.ts' does not exist.
+File '/mime.ts' does not exist.
+File '/mime.tsx' does not exist.
+File '/mime.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/mime/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/mime.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'mime' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/mime/index.d.ts' with Package ID '@types/mime/index.d.ts@2.0.2'. ========
+======== Resolving module 'body-parser' from '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/body-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/body-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/body-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/body-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/body-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/body-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/body-parser.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/body-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/body-parser.d.ts' does not exist.
+File '/home/developer/misc-stuff/body-parser.ts' does not exist.
+File '/home/developer/misc-stuff/body-parser.tsx' does not exist.
+File '/home/developer/misc-stuff/body-parser.d.ts' does not exist.
+File '/home/developer/body-parser.ts' does not exist.
+File '/home/developer/body-parser.tsx' does not exist.
+File '/home/developer/body-parser.d.ts' does not exist.
+File '/home/body-parser.ts' does not exist.
+File '/home/body-parser.tsx' does not exist.
+File '/home/body-parser.d.ts' does not exist.
+File '/body-parser.ts' does not exist.
+File '/body-parser.tsx' does not exist.
+File '/body-parser.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/express/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'body-parser' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/body-parser/index.d.ts' with Package ID '@types/body-parser/index.d.ts@1.19.0'. ========
+======== Resolving module 'serve-static' from '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/serve-static.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/serve-static.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/serve-static.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/serve-static.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/serve-static.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/serve-static.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/serve-static.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/serve-static.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/serve-static.d.ts' does not exist.
+File '/home/developer/misc-stuff/serve-static.ts' does not exist.
+File '/home/developer/misc-stuff/serve-static.tsx' does not exist.
+File '/home/developer/misc-stuff/serve-static.d.ts' does not exist.
+File '/home/developer/serve-static.ts' does not exist.
+File '/home/developer/serve-static.tsx' does not exist.
+File '/home/developer/serve-static.d.ts' does not exist.
+File '/home/serve-static.ts' does not exist.
+File '/home/serve-static.tsx' does not exist.
+File '/home/serve-static.d.ts' does not exist.
+File '/serve-static.ts' does not exist.
+File '/serve-static.tsx' does not exist.
+File '/serve-static.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/express/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'serve-static' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/serve-static/index.d.ts' with Package ID '@types/serve-static/index.d.ts@1.13.4'. ========
+======== Resolving module 'express-serve-static-core' from '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/express-serve-static-core.d.ts' does not exist.
+Resolution for module 'express-serve-static-core' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'express-serve-static-core' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' with Package ID '@types/express-serve-static-core/index.d.ts@4.17.7'. ========
+======== Resolving module 'qs' from '/home/developer/misc-stuff/webcam/node_modules/@types/express/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/qs.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/qs.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/express/qs.d.ts' does not exist.
+Resolution for module 'qs' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'qs' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/qs/index.d.ts' with Package ID '@types/qs/index.d.ts@6.9.3'. ========
+======== Resolving type reference directive 'node', containing file '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts', root directory '/home/developer/misc-stuff/webcam/node_modules/@types'. ========
+Resolving with primary search path '/home/developer/misc-stuff/webcam/node_modules/@types'.
+Found 'package.json' at '/home/developer/misc-stuff/webcam/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/home/developer/misc-stuff/webcam/node_modules/@types/node/index.d.ts'.
+'package.json' has a 'typesVersions' entry '>=3.7.0-0' that matches compiler version '3.9.3', looking for a pattern to match module name 'index.d.ts'.
+Module name 'index.d.ts', matched pattern '*'.
+Trying substitution 'ts3.7/*', candidate module location: 'ts3.7/index.d.ts'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts', result '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/node/ts3.7/index.d.ts' with Package ID '@types/node/ts3.7/index.d.ts@14.0.5', primary: true. ========
+======== Resolving module 'net' from '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/net.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/net.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/net.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/net.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/net.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/net.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/net.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/net.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/net.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/net.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/net.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/net.d.ts' does not exist.
+File '/home/developer/misc-stuff/net.ts' does not exist.
+File '/home/developer/misc-stuff/net.tsx' does not exist.
+File '/home/developer/misc-stuff/net.d.ts' does not exist.
+File '/home/developer/net.ts' does not exist.
+File '/home/developer/net.tsx' does not exist.
+File '/home/developer/net.d.ts' does not exist.
+File '/home/net.ts' does not exist.
+File '/home/net.tsx' does not exist.
+File '/home/net.d.ts' does not exist.
+File '/net.ts' does not exist.
+File '/net.tsx' does not exist.
+File '/net.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/net.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/net.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/net.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/net.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/net.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/net.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/net.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/net.js' does not exist.
+File '/home/developer/misc-stuff/webcam/net.jsx' does not exist.
+File '/home/developer/misc-stuff/net.js' does not exist.
+File '/home/developer/misc-stuff/net.jsx' does not exist.
+File '/home/developer/net.js' does not exist.
+File '/home/developer/net.jsx' does not exist.
+File '/home/net.js' does not exist.
+File '/home/net.jsx' does not exist.
+File '/net.js' does not exist.
+File '/net.jsx' does not exist.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/http.d.ts' does not exist.
+Resolution for module 'http' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'http' was not resolved. ========
+======== Resolving module 'https' from '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/https.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/https.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/https.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/https.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/https.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/https.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/https.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/https.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/https.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/https.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/https.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/https.d.ts' does not exist.
+File '/home/developer/misc-stuff/https.ts' does not exist.
+File '/home/developer/misc-stuff/https.tsx' does not exist.
+File '/home/developer/misc-stuff/https.d.ts' does not exist.
+File '/home/developer/https.ts' does not exist.
+File '/home/developer/https.tsx' does not exist.
+File '/home/developer/https.d.ts' does not exist.
+File '/home/https.ts' does not exist.
+File '/home/https.tsx' does not exist.
+File '/home/https.d.ts' does not exist.
+File '/https.ts' does not exist.
+File '/https.tsx' does not exist.
+File '/https.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/https.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/https.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/https.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/https.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/https.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/https.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/https.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/https.js' does not exist.
+File '/home/developer/misc-stuff/webcam/https.jsx' does not exist.
+File '/home/developer/misc-stuff/https.js' does not exist.
+File '/home/developer/misc-stuff/https.jsx' does not exist.
+File '/home/developer/https.js' does not exist.
+File '/home/developer/https.jsx' does not exist.
+File '/home/https.js' does not exist.
+File '/home/https.jsx' does not exist.
+File '/https.js' does not exist.
+File '/https.jsx' does not exist.
+======== Module name 'https' was not resolved. ========
+======== Resolving module 'events' from '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/events.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/events.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/events.d.ts' does not exist.
+Resolution for module 'events' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'events' was not resolved. ========
+======== Resolving module 'url' from '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/url.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/url.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/url.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/url.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/url.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/url.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/url.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/url.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/url.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/url.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/url.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/url.d.ts' does not exist.
+File '/home/developer/misc-stuff/url.ts' does not exist.
+File '/home/developer/misc-stuff/url.tsx' does not exist.
+File '/home/developer/misc-stuff/url.d.ts' does not exist.
+File '/home/developer/url.ts' does not exist.
+File '/home/developer/url.tsx' does not exist.
+File '/home/developer/url.d.ts' does not exist.
+File '/home/url.ts' does not exist.
+File '/home/url.tsx' does not exist.
+File '/home/url.d.ts' does not exist.
+File '/url.ts' does not exist.
+File '/url.tsx' does not exist.
+File '/url.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/url.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/url.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/url.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/url.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/url.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/url.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/url.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/url.js' does not exist.
+File '/home/developer/misc-stuff/webcam/url.jsx' does not exist.
+File '/home/developer/misc-stuff/url.js' does not exist.
+File '/home/developer/misc-stuff/url.jsx' does not exist.
+File '/home/developer/url.js' does not exist.
+File '/home/developer/url.jsx' does not exist.
+File '/home/url.js' does not exist.
+File '/home/url.jsx' does not exist.
+File '/url.js' does not exist.
+File '/url.jsx' does not exist.
+======== Module name 'url' was not resolved. ========
+======== Resolving module 'stream' from '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/stream.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/stream.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/stream.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/stream.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/stream.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/stream.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/stream.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/stream.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/stream.d.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/stream.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/stream.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/stream.d.ts' does not exist.
+File '/home/developer/misc-stuff/stream.ts' does not exist.
+File '/home/developer/misc-stuff/stream.tsx' does not exist.
+File '/home/developer/misc-stuff/stream.d.ts' does not exist.
+File '/home/developer/stream.ts' does not exist.
+File '/home/developer/stream.tsx' does not exist.
+File '/home/developer/stream.d.ts' does not exist.
+File '/home/stream.ts' does not exist.
+File '/home/stream.tsx' does not exist.
+File '/home/stream.d.ts' does not exist.
+File '/stream.ts' does not exist.
+File '/stream.tsx' does not exist.
+File '/stream.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/misc-stuff/webcam/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/stream.d.ts' does not exist.
+Directory '/home/developer/misc-stuff/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/developer/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/stream.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/http-proxy/stream.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/stream.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/stream.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/stream.js' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/stream.jsx' does not exist.
+File '/home/developer/misc-stuff/webcam/stream.js' does not exist.
+File '/home/developer/misc-stuff/webcam/stream.jsx' does not exist.
+File '/home/developer/misc-stuff/stream.js' does not exist.
+File '/home/developer/misc-stuff/stream.jsx' does not exist.
+File '/home/developer/stream.js' does not exist.
+File '/home/developer/stream.jsx' does not exist.
+File '/home/stream.js' does not exist.
+File '/home/stream.jsx' does not exist.
+File '/stream.js' does not exist.
+File '/stream.jsx' does not exist.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'http' from '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/http.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/http.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/http.d.ts' does not exist.
+Resolution for module 'http' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'http' was not resolved. ========
+======== Resolving module 'https' from '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/https.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/https.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/https.d.ts' does not exist.
+Resolution for module 'https' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'https' was not resolved. ========
+======== Resolving module 'express-serve-static-core' from '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/index.d.ts'. ========
+Explicitly specified module resolution kind: 'Classic'.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/express-serve-static-core.ts' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/express-serve-static-core.tsx' does not exist.
+File '/home/developer/misc-stuff/webcam/node_modules/@types/parcel-bundler/express-serve-static-core.d.ts' does not exist.
+Resolution for module 'express-serve-static-core' was found in cache from location '/home/developer/misc-stuff/webcam/node_modules/@types'.
+======== Module name 'express-serve-static-core' was successfully resolved to '/home/developer/misc-stuff/webcam/node_modules/@types/express-serve-static-core/index.d.ts' with Package ID '@types/express-serve-static-core/index.d.ts@4.17.7'. ========
+src/index.tsx(1,38): error TS2307: Cannot find module 'preact' or its corresponding type declarations.
+src/index.tsx(3,17): error TS2307: Cannot find module 'jss' or its corresponding type declarations.
+src/index.tsx(49,10): error TS2339: Property 'state' does not exist on type 'Main'.
+src/index.tsx(57,36): error TS2339: Property 'state' does not exist on type 'Main'.
+src/index.tsx(60,12): error TS2339: Property 'setState' does not exist on type 'Main'.
+src/index.tsx(65,43): error TS2339: Property 'state' does not exist on type 'Main'.
+src/util/util.ts(1,24): error TS2307: Cannot find module 'parse-apache-directory-index' or its corresponding type declarations.
+src/util/util.ts(2,19): error TS2307: Cannot find module 'cross-fetch' or its corresponding type declarations.
