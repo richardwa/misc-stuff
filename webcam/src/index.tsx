@@ -8,6 +8,7 @@ const { classes } = jss.createStyleSheet({
   preview: {
     width: "200px",
     height: "110px",
+    cursor: "pointer",
     margin: 4
   },
   stream: {
