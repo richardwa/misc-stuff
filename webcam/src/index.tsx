@@ -50,11 +50,11 @@ const cameras: Camera[] = [{
   feed: "/streams/1",
   captures: "camera1/"
 }, {
-  name: "stairs",
+  name: "garage",
   feed: "/streams/2",
   captures: "camera2/"
 }, {
-  name: "garage",
+  name: "stairs",
   feed: "/streams/3",
   captures: "camera3/"
 }];
@@ -94,7 +94,10 @@ export class Main extends Component<{}, State> {
     return [
       <div>{
         cameras.map((c, i) =>
-          <img class={classes.preview} onClick={() => this.onClick(i)} src={c.feed}></img>)
+          <img title={c.name}
+            class={classes.preview}
+            onClick={() => this.onClick(i)}
+            src={c.feed}></img>)
       }</div>,
       <img class={classes.stream} src={camera.feed}></img>,
       <div class={classes.captures}>{
