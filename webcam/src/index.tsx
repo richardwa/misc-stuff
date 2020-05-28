@@ -46,7 +46,7 @@ type Camera = {
 }
 
 const cameras: Camera[] = [{
-  name: "doorbel",
+  name: "doorbell",
   feed: "/streams/1",
   captures: "camera1/"
 }, {
