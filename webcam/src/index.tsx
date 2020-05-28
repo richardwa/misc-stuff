@@ -7,7 +7,7 @@ jss.setup(preset());
 const { classes } = jss.createStyleSheet({
   preview: {
     width: "200px",
-    height: "110px",
+    height: "112.5px",
     cursor: "pointer",
     margin: 4
   },
@@ -28,6 +28,7 @@ const { classes } = jss.createStyleSheet({
     },
     "& video": {
       width: "200px",
+      height: "112.5px",
       display: "block"
     },
     "& label": {
@@ -76,7 +77,7 @@ export class Main extends Component<{}, State> {
   retrieveClips = () => {
     const { currentCamera } = this.state;
     const camera = cameras[currentCamera];
-    getListing(camera.captures).then(list => {
+    getListing(`${camera.captures}?C=M;O=D`).then(list => {
       this.setState({ clips: list.files.slice(0, 10) });
     })
   }

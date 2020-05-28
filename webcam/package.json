@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Webcam Viewer",
   "scripts": {
-    "prebuild": "rimraf docs",
+    "prebuild": "rimraf site",
     "build": "parcel build src/index.html --public-url '.' --out-dir site",
     "preserve": "rimraf target",
     "serve": "ts-node devserver/server.ts",
