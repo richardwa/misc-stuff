@@ -21,3 +21,4 @@ const bundler = new Bundler('src/index.html', {
 app.use(bundler.middleware());
 
 app.listen(8000);
+console.log("port", 8000);
