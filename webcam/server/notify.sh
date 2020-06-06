@@ -10,19 +10,19 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 tty=`cat /sys/class/tty/tty0/active`
 
 # find the user of the tty
-user=$(who | grep $tty | awk '{print $1}' | head -n 1)
+user=$(who | grep $tty | awk '{print $1}' | head -n 1 | tr -s ' ')
 
 # get id of the user
 uid=$(id -u $user)
 
 echo $tty, $user, $uid
-if [ -z "$user" ]; then
+if [ "$user" == " " ]; then
+  # no active user, screen is on tty login prompt
+  sudo aplay -D default:SoundBar "$DIR/garage.wav"
+else
   sudo -u $user \
   XDG_RUNTIME_DIR=/run/user/$uid \
-  paplay "$DIR/garage.mp3"
-else
-  # no active user, screen is on tty login prompt
-  sudo aplay -D default:SoundBar -D default:SoundBar
+  paplay "$DIR/garage.wav"
 fi
 
 
