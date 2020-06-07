@@ -3,7 +3,7 @@
 # install to server, run installer as root
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-INSTALL_LOCATION=/etc/garage-door
+INSTALL_LOCATION=/etc/garage-status
 LOG=/var/log/garage-status.log
 
 cp -r "$DIR" $INSTALL_LOCATION
