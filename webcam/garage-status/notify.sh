@@ -1,4 +1,9 @@
 #!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # designed for a run-level 3 ubuntu system
@@ -18,11 +23,9 @@ uid=$(id -u $user)
 echo $tty, $user, $uid
 if [ "$user" == " " ]; then
   # no active user, screen is on tty login prompt
-  sudo aplay -D default:SoundBar "$DIR/garage.wav"
+  aplay -D default:SoundBar "$DIR/garage.wav"
 else
   sudo -u $user \
   XDG_RUNTIME_DIR=/run/user/$uid \
-  paplay "$DIR/garage.wav"
+  paplay --volume=65536 "$DIR/garage.wav"
 fi
-
-
