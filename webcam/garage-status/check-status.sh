@@ -35,7 +35,7 @@ else
     LAST_RUN_STATUS=$(tail -n 2 $LOG | head -1)
 
     # to avoid false notice, only send if we got 2 open in a row
-    if [ $LAST_RUN_STATUS > 0 ]; then
+    if [ "$LAST_RUN_STATUS" != "0" ]; then
         echo "send notice"
         $DIR/notify.sh
     fi
