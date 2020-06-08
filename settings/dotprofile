@@ -10,3 +10,4 @@ settings() {
   fi; 
 }
 
+echo "profile loaded"
