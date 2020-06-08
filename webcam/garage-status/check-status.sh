@@ -32,14 +32,14 @@ if [ $STATUS == 0 ]; then
     echo "closed" 
 else
     echo "open"
-    LAST_RUN_STATUS=$(tail -n 2 $LOG | head -1)
+    SUCCESS_RUNS_OF_N=$(grep "STATUS:" $LOG | tail -n 5 | grep "STATUS:0" | wc -l)
 
-    # to avoid false notice, only send if we got 2 open in a row
-    if [ "$LAST_RUN_STATUS" != "0" ]; then
+    # to avoid false notice, only send notice if there were no success in last N runs
+    if [ "$SUCCESS_RUNS_OF_N" == "0" ]; then
         echo "send notice"
         $DIR/notify.sh
     fi
 fi
 
 # make sure status is on second to last line
-echo -e "$STATUS\n"
+echo -e "STATUS:$STATUS\n"
