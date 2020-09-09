@@ -1,5 +1,8 @@
 #!/bin/bash
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-mkdir -p $DIR/out
-zip $DIR/out/pushtotalk.zip $DIR/* 
+out=$DIR/out
+mkdir -p $out
+rm -rf $out/*
+
+zip $out/pushtotalk.zip $DIR/* 
