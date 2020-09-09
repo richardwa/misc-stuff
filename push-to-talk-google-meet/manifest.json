@@ -6,15 +6,13 @@
  },
  "name": "Push To Talk",
  "description": "Push to Talk for Google Meet - Created with http://blog.self.li",
- "homepage_url": "http://blog.self.li/post/16366939413/how-to-convert-bookmarklet-to-chrome-extension",
+ "homepage_url": "https://github.com/richardwa/misc-stuff",
  "icons": {
      "16": "icon-16.png",
      "48": "icon-48.png",
      "128": "icon-128.png" },
  "permissions": [
-     "tabs",
-     "http://*/*",
-     "https://*/*"
+     "https://meet.google.com/*"
  ],
  "version": "0.1",
  "manifest_version": 2
