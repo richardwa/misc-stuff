@@ -18,6 +18,10 @@ void setup()
     }
   }
 
+  // 1=Sta
+  // 2=AP
+  // 3=both
+  WiFi.mode(WIFI_STA);
   WiFi.begin(NETWORK, PASSWORD);
 
   display = Display();

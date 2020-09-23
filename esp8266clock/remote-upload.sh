@@ -1,10 +1,13 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-REMOTE_DIR="~/misc-stuff/esp8266clock/"
+REMOTE_DIR="~/esp8266clock/"
+REMOTE_HOST="pi@raspberrypi"
 
 cd $DIR
-rsync -atv --exclude '.*' . rich@silverhawk.local:$REMOTE_DIR
-
+scp firmware.bin $REMOTE_HOST:$REMOTE_DIR
 
 # invoke upload on remote
-ssh -t rich@silverhawk "cd $REMOTE_DIR; ~/.platformio/penv/bin/pio run --target upload --target monitor;"
+ssh -t $REMOTE_HOST <<EOF
+cd $REMOTE_DIR
+esptool.py --before default_reset --after hard_reset --chip esp8266 --port "/dev/ttyUSB0" --baud 115200 write_flash 0x0 firmware.bin
+EOF

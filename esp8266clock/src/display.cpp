@@ -9,7 +9,7 @@ Display::Display()
   {
     lc.shutdown(i, false);
     /* Set the brightness to a medium values */
-    lc.setIntensity(i, 8);
+    lc.setIntensity(i, 6);
     /* and clear the display */
     lc.clearDisplay(i);
   }
