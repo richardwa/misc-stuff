@@ -2,28 +2,57 @@
 
 ### setup raspberry pi zero w
 * we need to ssh into the pi via usb, that way when we perform the flash with wifi chip, our ssh session will stay connection
-  1. echo dtoverlay=dwc2 >> config.txt
-  2. echo -e " modules-load=dwc2,g_ether" >> config.txt
-    * ensure the extra text comes after rootwait with a space separating it
-  3. pi will not show up as ethernet device to the host computer
-    * ssh pi@raspberrypi.local
-    * note pi will not have internet connection without further setup on host (not required)
+> echo dtoverlay=dwc2 >> config.txt
+
+* ensure the extra text comes after rootwait with a space separating it
+> echo -e " modules-load=dwc2,g_ether" >> config.txt
+
+* pi will show up as ethernet device to the host computer
+* note pi will not have internet connection without further setup on host (not required)
+> ssh pi@raspberrypi.local
 
 
 ### tuya-convert
-1.  in the pi, do:
-git clone https://github.com/ct-Open-Source/tuya-convert
-cd tuya-convert
-sudo ./start_flash.sh
-  * hold button on plug to enter flash mode
-  * connect to virt-flash access point created by the pi with a phone
-  * resume flashing, enter: yes
+in the pi, do:
+> git clone https://github.com/ct-Open-Source/tuya-convert
+> cd tuya-convert
+> sudo ./start_flash.sh
+* hold button on plug to enter flash mode
+* connect to virt-flash access point created by the pi with a phone
+* resume flashing, enter: yes
+
 tasmota is now flashed, tasmota will show up as another access point
-2. connect to tasmota AP on phone
-3. configure home network wifi (SSID,PW) via phone browser
-4. on any local network browser, navigate to the plug (check router page for new client/IP)
-5. update tasmota firmware
-6. configure plug using template:
-  {"NAME":"BNC-60/U133TJ","GPIO":[0,56,0,17,134,132,0,0,131,57,21,0,0],"FLAG":0,"BASE":18}
-7. in webconsole: PowerOnState 4 
-  * this will set the plug to be always on (that way even if we reboot the devices will keep power)
+
+### tasmota
+1. connect to tasmota AP on phone
+2. configure home network wifi (SSID,PW) via phone browser
+3. on any local network browser, navigate to the plug (check router page for new client/IP)
+4. update tasmota firmware
+5. configure plug using template:
+{"NAME":"BNC-60/U133TJ","GPIO":[0,56,0,17,134,132,0,0,131,57,21,0,0],"FLAG":0,"BASE":18}
+
+6. disable poweroff, the plug to be always on (even through a reboot)
+> PowerOnState 4 
+
+7. enable and configure mqtt, tasmota will automatically send status updates periodically
+8. set ntp server to local network machine
+> ntpserver1 192.168.1.105
+
+
+### mqtt server
+on local netowrk server install mosquitto
+
+> sudo apt install mosquitto
+> sudo apt install mosquitto-clients
+
+* show all incoming messages
+mosquitto_sub -v -t "#"
+
+* on ubuntu mosquito will now start automatically
+* nothing to config anonymous access on local network is fine
+
+### ntpserver
+* router is configured to never let IOT devices talk to internet
+on local network server install ntp
+> sudo apt install ntp
+
