@@ -35,8 +35,12 @@ tasmota is now flashed, tasmota will show up as another access point
 > PowerOnState 4 
 
 7. enable and configure mqtt, tasmota will automatically send status updates periodically
-8. set ntp server to local network machine
+
+* set ntp server to local network machine
 > ntpserver1 192.168.1.105
+
+* set timezone to utc
+> Timezone 0
 
 
 ### mqtt server
@@ -47,6 +51,12 @@ on local netowrk server install mosquitto
 
 * show all incoming messages
 mosquitto_sub -v -t "#"
+
+* start logging on startup
+echo "@reboot developer mosquitto_sub -v -t '#' >> /tmp/mqtt.log" | sudo tee -a /etc/crontab
+
+* start logging now
+nohup mosquitto_sub -v -t "#" >> /tmp/mqtt.log &
 
 * on ubuntu mosquito will now start automatically
 * nothing to config anonymous access on local network is fine
