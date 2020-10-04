@@ -1,4 +1,5 @@
 ArduinoData
+.vscode
 *.swp
 *.stl
 *.pw
