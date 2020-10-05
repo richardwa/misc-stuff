@@ -42,8 +42,8 @@ def rowRender(x):
     return f"{a} {b}"
 
 
-lastItem = len(series) - 1
-for i, name in enumerate(series):
-    print(name)
+for i, value in enumerate(["mercury", "tv", "mars"], start=1):
+    name = f"power{i}"
+    print(f'"{value}"')
     print("\n".join(map(rowRender, series[name])))
     print("E")
