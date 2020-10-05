@@ -53,10 +53,11 @@ on local netowrk server install mosquitto
 mosquitto_sub -v -t "#"
 
 * start logging on startup
-echo "@reboot developer mosquitto_sub -v -t '#' >> /tmp/mqtt.log" | sudo tee -a /etc/crontab
+* ensure write permission to target file
+echo "@reboot developer /usr/bin/mosquitto_sub -v -t '#' >> /home/public/mqtt.log" | sudo tee -a /etc/crontab
 
 * start logging now
-nohup mosquitto_sub -v -t "#" >> /tmp/mqtt.log &
+nohup mosquitto_sub -v -t "#" >> /home/public/mqtt.log &
 
 * on ubuntu mosquito will now start automatically
 * nothing to config anonymous access on local network is fine

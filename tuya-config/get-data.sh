@@ -1,6 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-LOG=$DIR/out.log
+LOG=$DIR/out/out.log
 for  i in 1 2 3
 do
   curl -s http://powermon${i}/cm?cmnd=Status%208  -w "\n" | tee -a $LOG | jq "{
