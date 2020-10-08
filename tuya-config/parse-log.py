@@ -10,7 +10,7 @@ format = "%y-%m-%d-%H:%M:%S"
 
 prev = {}
 series = {}
-stream = os.popen("tail -n 1000 /home/public/mqtt.log")
+stream = os.popen("tail -n 10000 /home/public/mqtt.log")
 for i, line in enumerate(stream):
     if "SENSOR" in line:
         [name_str, json_str] = line.split(" ", 1)
