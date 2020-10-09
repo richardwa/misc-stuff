@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import json
 import dateutil.parser as dp
-import os
+import fileinput
 
 # sample line
 # tele/power1/SENSOR {"Time":"2020-10-04T04:02:35","ENERGY":{"TotalStartTime":"2020-09-30T02:29:05","Total":8.315,"Yesterday":1.717,"Today":0.350,"Period":8,"Power":87,"ApparentPower":89,"ReactivePower":22,"Factor":0.97,"Voltage":121,"Current":0.736}}
@@ -10,8 +10,7 @@ format = "%y-%m-%d-%H:%M:%S"
 
 prev = {}
 series = {}
-stream = os.popen("tail -n 10000 /home/public/mqtt.log")
-for i, line in enumerate(stream):
+for i, line in enumerate(fileinput.input()):
     if "SENSOR" in line:
         [name_str, json_str] = line.split(" ", 1)
         data = json.loads(json_str)
