@@ -1,0 +1,1 @@
+TAG=="seat", ENV{ID_FOR_SEAT}=="usb-pci-0000_00_14_0-usb-0_5", ENV{ID_SEAT}="seat1"
