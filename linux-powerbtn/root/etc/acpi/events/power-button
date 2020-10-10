@@ -1,2 +1,2 @@
-event=button[ /]power
-action=/etc/acpi/power-button.sh
+event=button/power LNXPWRBN:00
+action=/etc/acpi/power-button.sh %e
