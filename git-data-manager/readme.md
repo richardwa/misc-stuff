@@ -1,3 +1,5 @@
+
+
 # a simple method to handle financial data.  
 * import into csv files
 * data can be committed and versioned
