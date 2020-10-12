@@ -9,3 +9,4 @@ if [[ $EUID -eq 0 ]]; then
     args="-rv"
 fi
 rsync $args $DIR/root/* /
+setxkbmap -layout us
