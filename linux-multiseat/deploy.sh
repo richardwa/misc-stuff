@@ -10,3 +10,8 @@ if [[ $EUID -eq 0 ]]; then
     rm /etc/udev/rules.d/72-*
 fi
 rsync $args $DIR/root/* /
+
+if [[ $EUID -eq 0 ]]; then
+    udevadm control --reload-rules
+    udevadm trigger
+fi
