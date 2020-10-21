@@ -206,6 +206,15 @@
       <alias name='hostdev4'/>
       <address type='usb' bus='0' port='4'/>
     </hostdev>
+    <hostdev mode='subsystem' type='usb' managed='yes'>
+      <source>
+        <vendor id='0x0a12'/>
+        <product id='0x0001'/>
+        <address bus='1' device='8'/>
+      </source>
+      <alias name='hostdev5'/>
+      <address type='usb' bus='0' port='5'/>
+    </hostdev>
     <redirdev bus='usb' type='spicevmc'>
       <alias name='redir0'/>
       <address type='usb' bus='0' port='1'/>
