@@ -22,3 +22,6 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\PCI\VEN_10DE&DEV_10F1&SUBSYS_8C
 
 # get xml
 virsh dumpxml win10 > win10.xml
+
+# attach device 
+virsh attach-device win10 --file mouse.xml
