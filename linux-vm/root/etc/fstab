@@ -1,0 +1,17 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda6 during installation
+UUID=fdb52b38-edb9-44e8-8ee2-46ac71458770 / btrfs compress=lzo,noatime,nodiratime,space_cache,ssd,discard,subvol=@ 0 0  
+UUID=fdb52b38-edb9-44e8-8ee2-46ac71458770 /home btrfs compress=lzo,noatime,nodiratime,space_cache,ssd,discard,subvol=@home 0
+
+UUID=2CDB-F2D2 /boot/efi       vfat    umask=0077      0       1
+UUID=464d7d79-51a7-47ea-a0cb-71c999ec63c7 none            swap    sw              0       0
+#UUID=e7582082-fb3f-4e26-bc3d-8008ca0e9b2a /mnt/sata ext4 defaults 0 0
+#UUID=2652CBAE52CB8153 /mnt/ntfs ntfs-3g defaults 0 0
+
+//mars.local/public /home/public cifs guest,file_mode=0770,dir_mode=0770,gid=132,iocharset=utf8  0  0
