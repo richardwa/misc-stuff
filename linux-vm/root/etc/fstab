@@ -14,4 +14,5 @@ UUID=fdb52b38-edb9-44e8-8ee2-46ac71458770 /home           btrfs   defaults,subvo
 # swap was on /dev/nvme0n1p2 during installation
 UUID=464d7d79-51a7-47ea-a0cb-71c999ec63c7 none            swap    sw              0       0
 
+
 //mars.local/public /home/public cifs guest,file_mode=0770,dir_mode=0770,gid=132,iocharset=utf8  0  0
