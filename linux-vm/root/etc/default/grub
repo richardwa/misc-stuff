@@ -5,7 +5,7 @@
 
 GRUB_DEFAULT=0
 GRUB_TIMEOUT_STYLE=hidden
-GRUB_TIMEOUT=0
+GRUB_TIMEOUT=10
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
 GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on vfio-pci.ids=10de:1c02,10de:10f1"
 GRUB_CMDLINE_LINUX=""
