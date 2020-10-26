@@ -1,12 +1,12 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-# do dry run
-args="-nrv"
 
 if [[ $EUID -eq 0 ]]; then
     # is root user execute for real
-    args="-rv"
+    rsync -rv $DIR/root/* /
+    # setxkbmap -layout us
+else
+    # rsync dry run
+    rsync -nrv $DIR/root/* /
 fi
-rsync $args $DIR/root/* /
-setxkbmap -layout us

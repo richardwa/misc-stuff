@@ -1,7 +1,7 @@
 use std::io::{BufRead, BufReader, Error};
-use std::process::{Command, Stdio, ChildStdout};
+use std::process::{Command, Stdio };
 use std::thread;
-use std::net::{TcpStream, TcpListener};
+use std::net::{TcpListener};
 use std::io::prelude::*;
 use std::sync::{Arc,Mutex};
 use ringbuf::{Producer,Consumer, RingBuffer};
@@ -9,7 +9,7 @@ use ringbuf::{Producer,Consumer, RingBuffer};
 
 
 
-fn start_data_stream(mut prod:Producer<Data>, mut cons:Arc<Mutex<Consumer<Data>>>) {
+fn start_data_stream(mut prod:Producer<Data>, cons:Arc<Mutex<Consumer<Data>>>) {
     
     let mut child = Command::new("C:\\Program Files\\NVIDIA Corporation\\NVSMI\\nvidia-smi.exe")
         .args(&[ 
@@ -39,10 +39,10 @@ fn start_data_stream(mut prod:Producer<Data>, mut cons:Arc<Mutex<Consumer<Data>>
                 let s:&str = &a[1][..len];
                 data.utilization = s.trim().parse().unwrap_or(-1);
                 println!("{},{}", data.temp, data.utilization);
-                if (prod.is_full()){
+                if prod.is_full() {
                     cons.lock().unwrap().pop();
                 }
-                prod.push(data);
+                let _res = prod.push(data);
             });
     });
 }
@@ -51,19 +51,27 @@ fn start_service(cons:Arc<Mutex<Consumer<Data>>>){
     let listener = TcpListener::bind("0.0.0.0:7878").unwrap();
 
     for stream in listener.incoming() {
-        let mut stream = stream.unwrap();
-        let mut buffer = [0; 1024];
-        stream.read(&mut buffer).unwrap();
+        let do_steps = || -> Result<(), Error> {
+            let mut stream = stream?;
+            let mut buffer = [0; 1024];
+            stream.read(&mut buffer)?;
 
-        let header = "HTTP/1.1 200 OK\r\n\r\n";
-        stream.write(header.as_bytes()).unwrap();
-        cons.lock().unwrap().for_each(|data| {
-            let s = format!("temp: {}, utilization: {} \n", data.temp, data.utilization);
-            stream.write(s.as_bytes()).unwrap();
-        });
+            let header = "HTTP/1.1 200 OK\r\n\r\n";
+            stream.write(header.as_bytes())?;
+            cons.lock().unwrap().for_each(|data| {
+                let s = format!("temp: {}, utilization: {} \n", data.temp, data.utilization);
+                stream.write(s.as_bytes()).unwrap_or(0);
+            });
+            
+            stream.flush()?;
+            Ok(())
+        };
         
-        stream.flush().unwrap();
-        println!("responded");
+        if let Err(_err) = do_steps(){
+            println!("error occurred");
+        }else{
+            println!("success")
+        }
     }
 }
 
@@ -73,7 +81,7 @@ struct Data {
 }
 
 fn main() -> Result<(), Error> {
-    let rb = RingBuffer::<Data>::new(10);
+    let rb = RingBuffer::<Data>::new(500);
     let (prod,cons) = rb.split();
     let cons1 = Arc::new(Mutex::new(cons));
     let cons2 = Arc::clone(&cons1);
