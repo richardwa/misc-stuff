@@ -31,7 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Planck PCB default pin-out
 // Change this to how you wired your keyboard
 // COLS: Left to right, ROWS: Top to bottom
-add#define MATRIX_ROW_PINS { D4, D5, D6, D7 }
+#define MATRIX_ROW_PINS { D4, D5, D6, D7 }
 #define MATRIX_COL_PINS { D3, D2, D1, D0, B7, B6, B5, B4, B3, B2, B1, B0}
 
 /* COL2ROW or ROW2COL */
