@@ -1,6 +1,4 @@
-// This is the canonical layout file for the Quantum project. If you want to add another keyboard,
-// this is the style you want to emulate.
-
+#include QMK_KEYBOARD_H
 #include "rwkb.h"
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
