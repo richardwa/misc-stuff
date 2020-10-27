@@ -3,18 +3,26 @@
 python3 -m pip install qmk
 qmk setup
 * expect setup to install into ~/qmk_firmware
+* use deploy.sh to perform build
 
-# setup bootloader
+
+# jj40 Board
+qmk flash -kb jj40 -km rich
+
+## setup bootloader
 Flashing example for this keyboard ([after setting up the bootloadHID flashing environment](https://docs.qmk.fm/#/flashing_bootloadhid))
 * place bootloadHID in ~/.local/bin
 
-# disable modemmanager
+## disable modemmanager
 sudo systemctl stop ModemManager.service
 sudo systemctl disable ModemManager.service
 
-# additional udev rule for jj40
+## additional udev rule for jj40
 ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05df", MODE="0666", GROUP="plugdev"
 
-**note: to flash unplug keyboard, hold backspace, then plugin keyboard
-./deploy.sh
+* note: to flash unplug keyboard, hold backspace, then plugin keyboard
+
+# teensy board
+qmk flash -kb teensy -km rich
+## setup bootloader
 

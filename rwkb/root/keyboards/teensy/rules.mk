@@ -1,5 +1,5 @@
 # MCU name
-MCU = atmega32a
+MCU = at90usb1287
 
 # Bootloader selection
 #   Teensy       halfkay
@@ -9,7 +9,7 @@ MCU = atmega32a
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = bootloadHID
+BOOTLOADER = halfkay
 
 # Build Options
 #   change yes to no to disable
