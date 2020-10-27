@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0x4B50  // "KP"
 #define PRODUCT_ID      0x0040
 #define DEVICE_VER      0x0200
-#define MANUFACTURER    KPrepublic
+#define MANUFACTURER    rwkb
 #define PRODUCT         JJ40
 
 /* matrix size */
