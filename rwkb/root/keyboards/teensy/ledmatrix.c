@@ -7,7 +7,7 @@
 uint8_t layerLED[LED_NUM_LAYERS][LED_MAT_ROWSIZE * LED_MAT_COLSIZE] = {
     {//0 - default layer 
         _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
-        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_OFF, _IND,_IND,_IND,_IND,
         _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
         _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND
     },

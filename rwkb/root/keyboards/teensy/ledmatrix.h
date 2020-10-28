@@ -41,6 +41,7 @@ void ledMatrixSetLayer(uint8_t layer);
 #define LED_MAT_COL10   0b00000010, 0b00000000, 0b00000000
 #define LED_MAT_COL11   0b00000001, 0b00000000, 0b00000000
 
+#define _OFF 0x00
 #define _IND 0xFF
 #define _BLU 0xF0
 #define _RED 0x0F
