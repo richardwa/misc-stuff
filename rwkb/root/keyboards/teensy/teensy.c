@@ -19,17 +19,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "teensy.h"
 #include "ledmatrix.h"
 
-
-void backlight_init_ports(void) {
-    // runs on startup
+void matrix_init_kb(void) {
+	// put your keyboard start-up code here
     ledMatrixInit();
 }
-void backlight_set(uint8_t level) {
-    // runs on level change
-    ledMatrixLayerChangeHook(level);
+
+void matrix_scan_kb(void) {
+	// put your looping keyboard code here
+	// runs every cycle (a lot)
+  ledMatrixDraw();
+
 }
 
-void backlight_task(void) {
-    // runs on each matrix scan
-  ledMatrixDraw();
+layer_state_t layer_state_set_user(layer_state_t state) {
+    uint8_t layer = 0;
+    if (1UL<<1 & state) layer = 1;
+    if (1UL<<2 & state) layer = 2;
+    if (1UL<<3 & state) layer = 3;
+    if (1UL<<4 & state) layer = 4;
+
+    ledMatrixSetLayer(layer);
+    return state;
 }

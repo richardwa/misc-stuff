@@ -1,8 +1,46 @@
 #include "ledmatrix.h"
 #include "cpp-utility.h"
-#include "ledmatrix-config.h"
-#include <util/atomic.h>
+#include <util/atomic.h>  
 #include <string.h>
+
+//remeber to update size  and change hook when adding layers
+uint8_t layerLED[LED_NUM_LAYERS][LED_MAT_ROWSIZE * LED_MAT_COLSIZE] = {
+    {//0 - default layer 
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND
+    },
+    {//1 - numbers 
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_RED, _RED,_RED,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_RED, _RED,_RED,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_RED, _RED,_RED,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_RED, _IND,_IND,_IND,_IND
+    },
+    {//2 - special and nav
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_RED,_RED, _RED,_RED,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND
+    },
+    {//3 - mouse and media layer 
+        _IND,_IND,_RED,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_RED,
+        _IND,_RED,_RED,_RED, _IND,_RED,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_RED,_IND,_IND, _IND,_IND,_IND,_IND, _RED,_RED,_RED,_RED
+    },
+    {//4 - game mode
+        _IND,_IND,_RED,_IND, _IND,_IND,_IND,_RED, _RED,_RED,_RED,_RED,
+        _IND,_RED,_RED,_RED, _IND,_IND,_IND,_RED, _RED,_RED,_RED,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND,
+        _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND, _IND,_IND,_IND,_IND
+    }
+};
+
+// state represents current active layers
+void ledMatrixSetLayer( uint8_t layer){
+    ledMatrixSetState(layerLED[layer]);
+}
 
 //period of 7 can be described with 3 bits
 #define LED_MAT_PERIOD 7
@@ -39,7 +77,7 @@ void ledMatrixInit(){
     }
 
     //set state for layer 0
-    ledMatrixLayerChangeHook(0);
+    ledMatrixSetLayer(0);
 }
 
 //buffer for holding physical color of each key
