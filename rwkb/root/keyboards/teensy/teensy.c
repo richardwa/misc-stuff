@@ -17,3 +17,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include "teensy.h"
+#include "ledmatrix.h"
+
+
+void backlight_init(void) {
+    // runs on startup
+    ledMatrixInit();
+}
+void backlight_set(uint8_t level) {
+    // runs on level change
+    ledMatrixLayerChangeHook(level);
+}
+
+void backlight_task(void) {
+    // runs on each matrix scan
+  ledMatrixDraw();
+}
