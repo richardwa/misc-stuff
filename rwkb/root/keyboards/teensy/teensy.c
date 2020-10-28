@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "ledmatrix.h"
 
 
-void backlight_init(void) {
+void backlight_init_ports(void) {
     // runs on startup
     ledMatrixInit();
 }

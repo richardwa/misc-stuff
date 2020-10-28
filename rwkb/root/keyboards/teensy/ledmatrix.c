@@ -1,6 +1,6 @@
 #include "ledmatrix.h"
 #include "cpp-utility.h"
-#include "ledmatrix-config.c"
+#include "ledmatrix-config.h"
 #include <util/atomic.h>
 #include <string.h>
 
@@ -23,8 +23,8 @@
 static uint8_t state[LED_MAT_SIZE][SIZE(LED_MAT_ALLP)] = {{0}};
 static uint8_t cycle = 0;
 static uint8_t ledOn = 0b00000001;
-void ledMatrixInit(){
 
+void ledMatrixInit(){
     //set row states, these show remain constant after being set here
     for (int j=0;j<(LED_MAT_PERIOD);j++){
 #define nested(pinmask,i,row) \
@@ -39,7 +39,7 @@ void ledMatrixInit(){
     }
 
     //set state for layer 0
-    ledMatrixLayerChangeHook(1UL);
+    ledMatrixLayerChangeHook(0);
 }
 
 //buffer for holding physical color of each key
@@ -126,7 +126,7 @@ void draw(uint8_t on){
 
     if (on) {
         //flag for setting row pins off if no columns are on
-        uint8_t someColumnOn = 0;
+        uint32_t someColumnOn = 0;
         //set columns
 #define lambda(mask,p,i) \
         someColumnOn |= (mask) & state[cycle][i]; \
@@ -144,8 +144,8 @@ void draw(uint8_t on){
 #undef lambda
     }else{
 #define lambda(mask,p,i) \
-        port_##p &= ~(mask);\
-        ctrl_##p &= ~(mask); 
+        port_##p &= (uint8_t) ~(mask);\
+        ctrl_##p &= (uint8_t) ~(mask); 
         MAP3(lambda,EMPTY,LED_MAT_ALLMASK,LED_MAT_ALLP,IDX(LED_MAT_ALLP))
 #undef lambda
     }
