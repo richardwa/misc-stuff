@@ -1,21 +1,25 @@
+#![windows_subsystem = "windows"]
 use std::io::{BufRead, BufReader, Error};
 use std::process::{Command, Stdio };
+use std::os::windows::process::CommandExt;
 use std::thread;
 use std::net::{TcpListener};
 use std::io::prelude::*;
 use std::sync::{Arc,Mutex};
+use std::env;
 use ringbuf::{Producer,Consumer, RingBuffer};
     
 
 
 
 fn start_data_stream(mut prod:Producer<Data>, cons:Arc<Mutex<Consumer<Data>>>) {
-    
     let mut child = Command::new("C:\\Program Files\\NVIDIA Corporation\\NVSMI\\nvidia-smi.exe")
         .args(&[ 
             "--query-gpu=temperature.gpu,utilization.gpu", 
             "--format=csv", 
             "-l", "5" ])
+        // https://docs.microsoft.com/en-us/windows/win32/procthread/process-creation-flags#CREATE_NO_WINDOW
+        .creation_flags(0x08000000) 
         .stdout(Stdio::piped())
         .spawn()
         .expect("error occurred");
@@ -48,8 +52,15 @@ fn start_data_stream(mut prod:Producer<Data>, cons:Arc<Mutex<Consumer<Data>>>) {
 }
 
 fn start_service(cons:Arc<Mutex<Consumer<Data>>>){
-    let listener = TcpListener::bind("0.0.0.0:7878").unwrap();
+    let args: Vec<String> = env::args().collect();
+    let mut port = "7878";
+    if args.len() > 1 {
+        port = &args[1];
+    }
 
+    let url = format!("{}:{}", "0.0.0.0", port);
+    println!("binding on: {}", url);
+    let listener = TcpListener::bind(url).unwrap();
     for stream in listener.incoming() {
         let do_steps = || -> Result<(), Error> {
             let mut stream = stream?;
