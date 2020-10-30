@@ -69,8 +69,9 @@ fn start_service(cons:Arc<Mutex<Consumer<Data>>>){
 
             let header = "HTTP/1.1 200 OK\r\n\r\n";
             stream.write(header.as_bytes())?;
+            stream.write("temp(C) utilization(%)\n".as_bytes())?;
             cons.lock().unwrap().for_each(|data| {
-                let s = format!("temp:{} utilization:{}\n", data.temp, data.utilization);
+                let s = format!("{} {}\n", data.temp, data.utilization);
                 stream.write(s.as_bytes()).unwrap_or(0);
             });
             
