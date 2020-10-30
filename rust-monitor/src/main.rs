@@ -9,18 +9,18 @@ use std::sync::{Arc,Mutex};
 use std::env;
 use ringbuf::{Producer,Consumer, RingBuffer};
     
-
-
-
 fn start_data_stream(mut prod:Producer<Data>, cons:Arc<Mutex<Consumer<Data>>>) {
-    let mut child = Command::new("C:\\Program Files\\NVIDIA Corporation\\NVSMI\\nvidia-smi.exe")
-        .args(&[ 
+    let mut cmd = Command::new("C:\\Program Files\\NVIDIA Corporation\\NVSMI\\nvidia-smi.exe");
+    cmd.args(&[ 
             "--query-gpu=temperature.gpu,utilization.gpu", 
             "--format=csv", 
-            "-l", "5" ])
+            "-l", "5" ]);
+
+    if cfg!(windows){
         // https://docs.microsoft.com/en-us/windows/win32/procthread/process-creation-flags#CREATE_NO_WINDOW
-        .creation_flags(0x08000000) 
-        .stdout(Stdio::piped())
+       cmd.creation_flags(0x08000000);
+    }
+    let mut child = cmd.stdout(Stdio::piped())
         .spawn()
         .expect("error occurred");
 
@@ -70,7 +70,7 @@ fn start_service(cons:Arc<Mutex<Consumer<Data>>>){
             let header = "HTTP/1.1 200 OK\r\n\r\n";
             stream.write(header.as_bytes())?;
             cons.lock().unwrap().for_each(|data| {
-                let s = format!("temp: {}, utilization: {} \n", data.temp, data.utilization);
+                let s = format!("temp:{} utilization:{}\n", data.temp, data.utilization);
                 stream.write(s.as_bytes()).unwrap_or(0);
             });
             
