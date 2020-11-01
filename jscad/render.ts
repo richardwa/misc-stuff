@@ -4,5 +4,5 @@ import * as fs from 'fs';
 const file = process.argv[2];
 import(file).then(({default:shape}) => {
   var outputData = jscad.generateOutput('stlb', shape);
-  fs.writeFileSync('torus.stl', outputData.asBuffer())
+  fs.writeFileSync('target/torus.stl', outputData.asBuffer())
 })

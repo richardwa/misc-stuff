@@ -1,4 +1,5 @@
-import {CSG as g} from '@jscad/csg';
+import { CSG } from '@jscad/csg';
+const { cube } = CSG;
 
 
-export default g.cube([1,1,1]); 
+export default cube([1, 1, 1]); 
