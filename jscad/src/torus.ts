@@ -1,5 +1,5 @@
-import * as jscad from '@jscad/csg/src/api';
+import * as api from '@jscad/csg/src/api';
 
-console.log(jscad);
+console.log(api);
 
-export default jscad.primitives3d.torus();
+export default api.primitives3d.torus();
