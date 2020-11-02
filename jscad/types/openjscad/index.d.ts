@@ -3,7 +3,7 @@ type Geom3 = {
   polygons: []
 }
 
-type Geom2 {
+type Geom2 = {
 
 }
 
