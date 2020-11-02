@@ -1,5 +1,6 @@
 import * as jscad from '@jscad/core';
 import * as fs from 'fs';
+console.log(jscad);
 
 const file = process.argv[2];
 import(file).then(({default:shape}) => {

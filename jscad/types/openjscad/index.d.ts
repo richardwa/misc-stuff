@@ -1,16 +1,10 @@
-type Shape = {
+type Geom3 = {
   // we generally don't manipulate the shape directly, but it is here as a reference type
   polygons: []
 }
 
-declare module '@jscad/csg' {
-  const CSG: {
-    cube: ([x, y, z]) => Shape;
-    roundedCylinder: () => Shape;
-  }
-  const CAG: {
-    
-  }
+type Geom2 {
+
 }
 
 declare module '@jscad/csg/src/api'{
@@ -134,6 +128,7 @@ declare module '@jscad/csg/src/api'{
     hsv2rgb: any,
     html2rgb: any,
   }
+
   const maths: {
     sin: any,
     cos: any,
@@ -162,10 +157,11 @@ declare module '@jscad/csg/src/api'{
   };
   const OpenJsCad: { OpenJsCad: { log: any } };
   const debug: { echo: any }
+  
 }
   
 
-declare module '@jscad/openjscad' {
+declare module '@jscad/core' {
   type OutputTypes = 'stlb';
   const generateOutput: (a: OutputTypes, b) => Output;
   class Output {
