@@ -1,5 +1,6 @@
 import { CSG } from '@jscad/csg';
-const { cube } = CSG;
+const { cube, roundedCylinder: torus } = CSG;
 
+console.log(CSG);
 
-export default cube([1, 1, 1]); 
+export default torus();
