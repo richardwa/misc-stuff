@@ -2,7 +2,7 @@
  * min.css for OpenJSCAD.org viewer
  */
 
-.jscad-container {
+ .jscad-container {
   margin: 5px 15px 5px 5px; /* not inherited */
   padding: 20px; /* not inherited */
   color: Black;
@@ -104,4 +104,3 @@ canvas {
 #busy {
   vertical-align: middle;
 }
-

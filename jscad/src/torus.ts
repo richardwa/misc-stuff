@@ -1,6 +1,6 @@
-import { CSG } from '@jscad/csg';
-const { cube, roundedCylinder: torus } = CSG;
+import { CSG, CAG } from '@jscad/csg';
+import * as api from '@jscad/csg/src/api';
 
-console.log(CSG);
+console.log(api);
 
-export default torus();
+export default api.primitives3d.torus();
