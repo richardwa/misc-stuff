@@ -1,0 +1,4 @@
+parametric
+    M :: slider[-1,2] = 0;
+in
+morph M [cube, sphere]

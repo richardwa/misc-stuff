@@ -1,0 +1,34 @@
+// Logarithmic spiral.
+// https://swiftcoder.wordpress.com/2010/06/21/logarithmic-spiral-distance-field/
+//
+// `s` is a scaling parameter. You could also use `scale(s)`.
+//
+// Growth rate parameter `g` controls how tightly and in which direction
+// the spiral spirals.
+// `g=0.1759` is a measured growth rate for a Nautilus shell.
+// This implementation requires 0 < g < 1 for a counterclockwise spiral,
+// or -1 < g < 0 for a clockwise spiral.
+//
+// The spiral makes a constant angle t with any radius vector.
+// You can define `g` as `cot t`.
+//
+// Distance field looks okay for g=.2, is bonkers for more extreme values.
+
+let
+    log_spiral [s, g] = make_shape {
+        dist [x,y,_,_] =
+            let r = mag[x,y];
+                t = phase[x,y];
+            in if (r == 0)
+                0
+            else
+                let n = (log(r/s)/g - t) / tau;
+                    upper_r = s * e^(g*(t+tau*ceil n));
+                    lower_r = s * e^(g*(t+tau*floor n));
+                in (min[abs(upper_r-r), abs(r-lower_r)] - r*abs g)
+                    / 1.24; /* empirical Lipschitz factor for g=.2 */
+        is_2d = true;
+    };
+
+in
+log_spiral [1, 0.2]
