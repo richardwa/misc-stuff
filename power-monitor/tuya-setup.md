@@ -42,28 +42,3 @@ tasmota is now flashed, tasmota will show up as another access point
 * set timezone to utc
 > Timezone 0
 
-
-### mqtt server
-on local netowrk server install mosquitto
-
-> sudo apt install mosquitto
-> sudo apt install mosquitto-clients
-
-* show all incoming messages
-mosquitto_sub -v -t "#"
-
-* start logging on startup
-* ensure write permission to target file
-echo "@reboot developer /usr/bin/mosquitto_sub -v -t '#' >> /home/public/mqtt.log" | sudo tee -a /etc/crontab
-
-* start logging now
-nohup mosquitto_sub -v -t "#" >> /home/public/mqtt.log &
-
-* on ubuntu mosquito will now start automatically
-* nothing to config anonymous access on local network is fine
-
-### ntpserver
-* router is configured to never let IOT devices talk to internet
-on local network server install ntp
-> sudo apt install ntp
-
