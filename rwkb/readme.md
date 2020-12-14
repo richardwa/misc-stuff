@@ -1,3 +1,6 @@
+# install dependencies
+sudo apt install gcc-avr avr-libc gcc-arm-none-eabi avrdude dfu-util dfu-programmer
+
 # setup QMK python tool
 [QMK CLI](https://beta.docs.qmk.fm)
 python3 -m pip install qmk
