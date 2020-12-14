@@ -20,7 +20,9 @@
 #define _RS 2
 #define _OT 3 
 #define _GM 4 
-#define TAPPING_TOGGLE 2
+
+//define TAPPING_TOGGLE 2 under config.h
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QW] = { /* Qwerty */
   {KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC},
