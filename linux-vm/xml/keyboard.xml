@@ -1,7 +1,0 @@
-<hostdev mode='subsystem' type='usb' managed='yes'>
-      <source>
-        <vendor id='0xfeed'/>
-        <product id='0x6060'/>
-      </source>
-</hostdev>
-

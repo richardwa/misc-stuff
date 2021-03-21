@@ -7,7 +7,8 @@ const name = path.basename(file, '.ts');
 import(file).then(({ main }: { main: Shape3 }) => {
   console.time('render');
   const faces = dualMarch({
-    size: 4,
+    size: 2,
+    minSize: 1,
     shape: main,
   });
   console.timeEnd('render');

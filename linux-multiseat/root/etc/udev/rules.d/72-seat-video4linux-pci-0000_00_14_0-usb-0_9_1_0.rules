@@ -1,1 +1,0 @@
-TAG=="seat", ENV{ID_FOR_SEAT}=="video4linux-pci-0000_00_14_0-usb-0_9_1_0", ENV{ID_SEAT}="seat1"

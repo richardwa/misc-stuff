@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "render": "ts-node ./index.ts"
+    "render": "tscad",
+    "viewer": "tscad-viewer"
   },
   "author": "",
   "license": "ISC",
