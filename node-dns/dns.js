@@ -25,6 +25,9 @@ function proxy(question, response, cb) {
   request.send();
 }
 
+const blockList = {
+  "192.168.1.179": ['youtube.com']
+}
 
 function handleRequest(request, response) {
   let f = []; // array of functions
@@ -32,7 +35,13 @@ function handleRequest(request, response) {
   // proxy all questions
   // since proxying is asynchronous, store all callbacks
   request.question.forEach(question => {
-    console.log(request.address.address, question.name);
+    const from = request.address.address;
+    const domain = question.name;
+    console.log(from, domain);
+    const list = blockList[from];
+    if (list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
+      return;
+    }
     f.push(cb => proxy(question, response, cb));
   });
 
