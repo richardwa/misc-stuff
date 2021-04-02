@@ -1,0 +1,14 @@
+[Unit]
+Description=node dns service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=public
+ExecStart=/usr/bin/env node /home/public/node-dns/node-dns/dns.js
+
+[Install]
+WantedBy=multi-user.target
