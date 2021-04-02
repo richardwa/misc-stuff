@@ -10,8 +10,6 @@ server.on('socketError', (err, socket) => console.error(err));
 let authority = { address: '192.168.1.1', port: 53, type: 'udp' };
 
 function proxy(question, response, cb) {
-  console.log('proxying', question.name);
-
   var request = dns.Request({
     question: question, // forwarding the question
     server: authority,  // this is the DNS server we are asking
@@ -29,13 +27,12 @@ function proxy(question, response, cb) {
 
 
 function handleRequest(request, response) {
-  console.log('request from', request.address.address, 'for', request.question[0].name);
-
   let f = []; // array of functions
 
   // proxy all questions
   // since proxying is asynchronous, store all callbacks
   request.question.forEach(question => {
+    console.log(request.address.address, question.name);
     f.push(cb => proxy(question, response, cb));
   });
 

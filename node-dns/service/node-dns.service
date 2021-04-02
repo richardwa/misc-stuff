@@ -12,3 +12,8 @@ ExecStart=/usr/bin/env node /home/public/node-dns/node-dns/dns.js
 
 [Install]
 WantedBy=multi-user.target
+
+# cp ./node-dns/service/node-dns.service /etc/systemd/system/node-dns.service
+# sudo systemctl enable node-dns
+# sudo systemctl start node-dns
+# journalctl -u node-dns
