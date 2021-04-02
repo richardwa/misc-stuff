@@ -40,6 +40,7 @@ function handleRequest(request, response) {
     console.log(from, domain);
     const list = blockList[from];
     if (list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
+      console.log(from, domain, 'blocked');
       return;
     }
     f.push(cb => proxy(question, response, cb));
