@@ -14,10 +14,8 @@ function proxy(from, question, response, cb) {
   const list = blockList[from];
   if (list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
     console.log('block', from, domain);
-    response.answer.push(a)
+    cb();
     return;
-  } else {
-    console.log('allow', from, domain);
   }
 
   var request = dns.Request({
@@ -28,6 +26,7 @@ function proxy(from, question, response, cb) {
 
   // when we get answers, append them to the response
   request.on('message', (err, msg) => {
+    console.log('allow', from, domain, msg.answer.map(a => a.address).join());
     msg.answer.forEach(a => response.answer.push(a));
   });
 
@@ -37,9 +36,12 @@ function proxy(from, question, response, cb) {
 
 const blockList = {
   "192.168.1.179": [
-    //'youtube.com'
+    'youtube.com',
     'crazygames.com',
     'zynga.com'
+  ],
+  "192.168.1.189": [
+    'youtube.com'
   ]
 }
 
