@@ -9,7 +9,17 @@ server.on('socketError', (err, socket) => console.error(err));
 
 let authority = { address: '192.168.1.1', port: 53, type: 'udp' };
 
-function proxy(question, response, cb) {
+function proxy(from, question, response, cb) {
+  const domain = question.name;
+  const list = blockList[from];
+  if (list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
+    console.log('block', from, domain);
+    response.answer.push(a)
+    return;
+  } else {
+    console.log('allow', from, domain);
+  }
+
   var request = dns.Request({
     question: question, // forwarding the question
     server: authority,  // this is the DNS server we are asking
@@ -26,7 +36,11 @@ function proxy(question, response, cb) {
 }
 
 const blockList = {
-  "192.168.1.179": ['youtube.com']
+  "192.168.1.179": [
+    //'youtube.com'
+    'crazygames.com',
+    'zynga.com'
+  ]
 }
 
 function handleRequest(request, response) {
@@ -36,14 +50,7 @@ function handleRequest(request, response) {
   // since proxying is asynchronous, store all callbacks
   request.question.forEach(question => {
     const from = request.address.address;
-    const domain = question.name;
-    console.log(from, domain);
-    const list = blockList[from];
-    if (list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
-      console.log(from, domain, 'blocked');
-      return;
-    }
-    f.push(cb => proxy(question, response, cb));
+    f.push(cb => proxy(from, question, response, cb));
   });
 
   // do the proxying in parallel
