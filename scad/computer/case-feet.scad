@@ -1,6 +1,3 @@
-
-
-
 difference(){
      cyl(15,16);
      cyl(2,offset=-1);

@@ -1,0 +1,20 @@
+{
+  "name": "tscad-prints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "render": "tscad",
+    "viewer": "tscad-viewer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tscad": "file:..\\..\\tscad",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "ts-node": "^9.1.1"
+  }
+}

@@ -7,3 +7,4 @@ out
 *.log
 target
 node_modules
+.*
