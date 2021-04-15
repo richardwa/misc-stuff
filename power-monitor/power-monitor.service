@@ -1,0 +1,20 @@
+[Unit]
+Description=power monitor log
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=public
+ExecStart=mosquitto_sub -v -t "#"
+
+[Install]
+WantedBy=multi-user.target
+
+# sudo cp ./power-monitor.service /etc/systemd/system/power-monitor.service
+# sudo systemctl enable power-monitor
+# sudo systemctl restart power-monitor
+# journalctl -u power-monitor -f
+

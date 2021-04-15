@@ -35,11 +35,14 @@ function proxy(from, question, response, cb) {
 }
 
 const blockList = {
+  // neptune
   "192.168.1.179": [
     'youtube.com',
     'crazygames.com',
+    'poki.com',
     'zynga.com'
   ],
+  // googletv
   "192.168.1.189": [
     'youtube.com'
   ]
