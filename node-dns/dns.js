@@ -1,5 +1,7 @@
-let dns = require('native-dns');
-let async = require('async');
+const dns = require('native-dns');
+const async = require('async');
+const http = require('http');
+
 let server = dns.createServer();
 
 server.on('listening', () => console.log('server listening on', server.address()));
@@ -65,4 +67,12 @@ function handleRequest(request, response) {
 
 server.on('request', handleRequest);
 server.serve(53, '192.168.1.105');
-console.log('listening');
+console.log('dns listening on 53');
+
+
+http.createServer((req, resp) => {
+  if (req.url == '/') {
+    resp.end(JSON.stringify(blockList));
+  }
+}).listen(8014);
+console.log('http listening on 8014');
