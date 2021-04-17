@@ -11,10 +11,27 @@ server.on('socketError', (err, socket) => console.error(err));
 
 let authority = { address: '192.168.1.1', port: 53, type: 'udp' };
 
+const settings = {
+  pause: false
+}
+const blockList = {
+  // neptune
+  "192.168.1.179": [
+    'youtube.com',
+    'crazygames.com',
+    'poki.com',
+    'zynga.com'
+  ],
+  // googletv
+  "192.168.1.189": [
+    'youtube.com'
+  ]
+}
+
 function proxy(from, question, response, cb) {
   const domain = question.name;
   const list = blockList[from];
-  if (!blockList.pause && list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
+  if (!settings.pause && list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
     console.log('block', from, domain);
     cb();
     return;
@@ -36,20 +53,7 @@ function proxy(from, question, response, cb) {
   request.send();
 }
 
-const blockList = {
-  pause: false,
-  // neptune
-  "192.168.1.179": [
-    'youtube.com',
-    'crazygames.com',
-    'poki.com',
-    'zynga.com'
-  ],
-  // googletv
-  "192.168.1.189": [
-    'youtube.com'
-  ]
-}
+
 
 function handleRequest(request, response) {
   let f = []; // array of functions
@@ -71,23 +75,26 @@ server.serve(53, '192.168.1.105');
 console.log('dns listening on 53');
 
 const cancelPause = () => {
-  blockList.pause = false;
-  blockList.pauseStart = undefined;
+  settings.pause = false;
+  settings.pauseStart = undefined;
 }
 http.createServer((req, resp) => {
   if (req.url.startsWith('/pause')) {
-    if (!blockList.pause) {
-      blockList.pause = true;
-      blockList.pauseStart = Date.now();
+    if (!settings.pause) {
+      settings.pause = true;
+      settings.pauseStart = Date.now();
       // pause blocking for 30 min
       timeout = setTimeout(cancelPause, 1000 * 60 * 30);
     }
   } else if (req.url.startsWith('/cancel')) {
     cancelPause();
   }
-  blockList.pauseDuration = blockList.pause
-    ? Math.floor((Date.now() - blockList.pauseStart) / (1000))
+  settings.pauseDuration = settings.pause
+    ? Math.floor((Date.now() - settings.pauseStart) / (1000))
     : 0;
-  resp.end(JSON.stringify(blockList, null, 2));
+  resp.end(JSON.stringify({
+    settings,
+    blockList
+  }, null, 2));
 }).listen(8014);
 console.log('http listening on 8014');
