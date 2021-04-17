@@ -14,7 +14,7 @@ let authority = { address: '192.168.1.1', port: 53, type: 'udp' };
 function proxy(from, question, response, cb) {
   const domain = question.name;
   const list = blockList[from];
-  if (list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
+  if (!blockList.pause && list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
     console.log('block', from, domain);
     cb();
     return;
@@ -37,6 +37,7 @@ function proxy(from, question, response, cb) {
 }
 
 const blockList = {
+  pause: false,
   // neptune
   "192.168.1.179": [
     'youtube.com',
@@ -69,10 +70,24 @@ server.on('request', handleRequest);
 server.serve(53, '192.168.1.105');
 console.log('dns listening on 53');
 
-
+const cancelPause = () => {
+  blockList.pause = false;
+  blockList.pauseStart = undefined;
+}
 http.createServer((req, resp) => {
-  if (req.url == '/') {
-    resp.end(JSON.stringify(blockList));
+  if (req.url.startsWith('/pause')) {
+    if (!blockList.pause) {
+      blockList.pause = true;
+      blockList.pauseStart = Date.now();
+      // pause blocking for 30 min
+      timeout = setTimeout(cancelPause, 1000 * 60 * 30);
+    }
+  } else if (req.url.startsWith('/cancel')) {
+    cancelPause();
   }
+  blockList.pauseDuration = blockList.pause
+    ? Math.floor((Date.now() - blockList.pauseStart) / (1000))
+    : 0;
+  resp.end(JSON.stringify(blockList, null, 2));
 }).listen(8014);
 console.log('http listening on 8014');
