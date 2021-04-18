@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# get console size
+cols=$(stty size|cut -d' ' -f2)
+cols=$(expr $cols - 36)
+
 # devices table
 printf "mac name ip\n" > /dev/shm/devices.txt
 cat /home/rich/github/personal/ddwrt/devices.md | grep "192.168" | tr -s "|" " " >> /dev/shm/devices.txt
@@ -17,8 +21,9 @@ from dns a
 join devices b on a.client = b.ip  
 group by name
 order by count
-" /dev/shm/dns.txt /dev/shm/devices.txt | 
-awk -F, 'NR != 1 { n=int(50 * $2/10000); printf("%-20.20s %5d ",$1,$2); while (n--) printf("*"); print("") }'
+" /dev/shm/dns.txt /dev/shm/devices.txt > /dev/shm/tmp.txt
+max=$(cut -d"," -f2 /dev/shm/tmp.txt | sort -nr | head -1)
+awk -F, 'NR != 1 { n=int('$cols' * $2/'$max'); printf("%-20.20s %5d ",$1,$2); while (n--) printf("*"); print("") }' /dev/shm/tmp.txt
 
 printf "\n\nTOP 50 DOMAIN REQUESTS\n"
 textql --header --output-header -dlm " " -sql " 
@@ -27,11 +32,17 @@ from dns
 group by domain
 order by count desc
 limit 50
-" /dev/shm/dns.txt | awk -F, 'NR != 1 { n=int(50 * $2/5000); printf("%-20.20s %5d ",$1,$2); while (n--) printf("*"); print("") }'
+" /dev/shm/dns.txt > /dev/shm/tmp.txt
+max=$(cut -d"," -f2 /dev/shm/tmp.txt | sort -nr | head -1)
+awk -F, 'NR != 1 { n=int('$cols' * $2/'$max'); printf("%-20.20s %5d ",$1,$2); while (n--) printf("*"); print("") }' /dev/shm/tmp.txt
 
 printf "\n\nACTIVITY BY HOUR\n"
 textql --header --output-header -dlm " " -sql " 
 select strftime('%Y-%m-%d %H',req) as _date, count(1) as count
 from dns
 group by _date
-" /dev/shm/dns.txt | awk -F, 'NR != 1 { n=int(50 * $2/5000); printf("%-20.20s %5d ",$1,$2); while (n--) printf("*"); print("") }'
+" /dev/shm/dns.txt > /dev/shm/tmp.txt
+max=$(cut -d"," -f2 /dev/shm/tmp.txt | sort -nr | head -1)
+awk -F, 'NR != 1 { n=int('$cols' * $2/'$max'); printf("%-20.20s %5d ",$1,$2); while (n--) printf("*"); print("") }' /dev/shm/tmp.txt
+
+rm /dev/shm/devices.txt /dev/shm/dns.txt /dev/shm/tmp.txt
