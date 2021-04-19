@@ -24,7 +24,8 @@ const blockList = {
   ],
   // googletv
   "192.168.1.189": [
-    'youtube.com'
+    'youtube.com',
+    'netflix.com'
   ]
 }
 
