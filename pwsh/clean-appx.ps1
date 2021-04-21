@@ -10,7 +10,6 @@ $whitelist = @(
   "D50536CD.CitrixReceiver"
 )
 
-
-Get-AppxPackage -User albert | Where-Object {
+Get-AppxPackage -AllUsers | Where-Object {
   !$_.Publisher.contains('O=Microsoft Corporation,') -and !$whitelist.Contains($_.name)
 } | Remove-AppxPackage -AllUsers

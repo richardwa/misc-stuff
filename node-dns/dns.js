@@ -24,8 +24,7 @@ const blockList = {
   ],
   // googletv
   "192.168.1.189": [
-    'youtube.com',
-    'netflix.com'
+    ''
   ]
 }
 
@@ -79,6 +78,7 @@ const cancelPause = () => {
   settings.pause = false;
   settings.pauseStart = undefined;
 }
+
 http.createServer((req, resp) => {
   if (req.url.startsWith('/pause')) {
     if (!settings.pause) {
@@ -93,6 +93,7 @@ http.createServer((req, resp) => {
   settings.pauseDuration = settings.pause
     ? Math.floor((Date.now() - settings.pauseStart) / (1000))
     : 0;
+
   resp.end(JSON.stringify({
     settings,
     blockList
