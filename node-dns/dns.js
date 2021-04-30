@@ -33,6 +33,13 @@ function proxy(from, question, response, cb) {
   const list = blockList[from];
   if (!settings.pause && list && list.reduce((a, v, y) => a || domain.endsWith(v), false)) {
     console.log('block', from, domain);
+    response.answer.push({
+      name: domain,
+      type: 1,
+      class: 1,
+      ttl: 57,
+      address: '192.168.1.3'
+    });
     cb();
     return;
   }
@@ -46,6 +53,7 @@ function proxy(from, question, response, cb) {
   // when we get answers, append them to the response
   request.on('message', (err, msg) => {
     console.log('allow', from, domain, msg.answer.map(a => a.address).join());
+    //console.log(msg.answer);
     msg.answer.forEach(a => response.answer.push(a));
   });
 
@@ -80,7 +88,14 @@ const cancelPause = () => {
 }
 
 http.createServer((req, resp) => {
-  if (req.url.startsWith('/pause')) {
+  if (req.url.startsWith('/pause2')) {
+    if (!settings.pause) {
+      settings.pause = true;
+      settings.pauseStart = Date.now();
+      // pause blocking for 2 hr
+      timeout = setTimeout(cancelPause, 1000 * 60 * 120);
+    }
+  } else if (req.url.startsWith('/pause')) {
     if (!settings.pause) {
       settings.pause = true;
       settings.pauseStart = Date.now();
