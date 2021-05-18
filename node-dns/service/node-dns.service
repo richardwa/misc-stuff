@@ -2,6 +2,8 @@
 Description=node dns service
 After=network.target
 StartLimitIntervalSec=0
+Requires=network-online.target
+After=network-online.target
 
 [Service]
 Type=simple
@@ -11,8 +13,7 @@ User=public
 ExecStart=/usr/bin/env node /home/public/node-dns/node-dns/dns.js
 
 [Install]
-After=network-online.target
-Wants=network-online.target
+WantedBy=multi-user.target
 
 # sudo cp ./node-dns/service/node-dns.service /etc/systemd/system/node-dns.service
 # sudo systemctl enable node-dns
